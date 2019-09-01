@@ -1,0 +1,156 @@
+<template>
+  <q-layout view="lHh Lpr fff" class="background">
+    <q-header>
+      <q-toolbar class="toolbar">
+        <div class="mobile-only text-black">
+          <div class="full-width row no-wrap justify-start items-start content-start header-container">
+            <div class="col-7">
+              <q-btn flat @click="leftDrawerOpen = !leftDrawerOpen" aria-label="Menu" icon="menu">
+              </q-btn>
+            </div>
+            <div class="col-5">
+              <img class="logo-mobile" src="../assets/harvard-logo.png" alt="Harvard Copy logo" />
+            </div>
+          </div>
+        </div>
+
+        <!-- Desktop Tabs -->
+        <div class="desktop-only">
+          <div class="row header-container">
+            <div class="col-md-4">
+              <img class="logo" src="../assets/harvard-logo.png" alt="Harvard Copy logo" />
+            </div>
+            <q-tabs dense shrink stretch indicator-color="info" class="text-black col-md-8 absolute-right"
+              v-model="tabModel">
+              <span v-for="tab in tabs">
+                <q-route-tab :label="tab.name" :name="tab.name" :to="tab.link" />
+              </span>
+            </q-tabs>
+          </div>
+        </div>
+      </q-toolbar>
+    </q-header>
+
+    <!-- Mobile Tabs -->
+    <q-drawer v-model="leftDrawerOpen" class="mobile-only">
+      <q-list link bordered v-for="tab in tabs">
+        <q-item clickable @click.native="push(tab)" v-ripple>
+          <q-item-section>{{tab.name}}</q-item-section>
+        </q-item>
+      </q-list>
+    </q-drawer>
+
+    <q-page-container>
+      <router-view />
+    </q-page-container>
+
+    <q-footer reveal>
+      <q-toolbar class="text-black">
+        <q-toolbar-title class="row justify-center">
+          <div class="col-md-2 q-mt-xs self-center">
+
+            &copy;{{year}} {{companyName}}
+          </div>
+          <div class="col-md-8"></div>
+          <div class="col-md-2 self-center float-right">
+            <q-btn flat @click="launch('https://www.facebook.com/')" flat>
+              <q-icon size="2rem" name="fab fa-facebook-square" />
+            </q-btn>
+          </div>
+        </q-toolbar-title>
+      </q-toolbar>
+    </q-footer>
+
+  </q-layout>
+</template>
+
+<script>
+  import { openURL } from 'quasar'
+
+  export default {
+    name: 'MyLayout',
+    data() {
+      return {
+        tabModel: '/',
+        leftDrawerOpen: false
+      }
+    },
+    computed: {
+      tabs() {
+        return this.$store.state.tabs.tabs
+      },
+      companyName() {
+        return this.$store.state.state.companyName
+      },
+      year() {
+        var y = new Date;
+        return y.getFullYear();
+      }
+    },
+    mounted() {
+    },
+    methods: {
+      openURL,
+      push(tab) {
+        this.$router.push(tab.link)
+      }
+    }
+  }
+</script>
+
+<style>
+  .heading {
+    color: #31CCEC;
+  }
+
+  .header {
+    background-color: rgba(255, 255, 255, 0.95);
+    padding: 2rem 2rem;
+  }
+
+  .toolbar {
+    background-color: rgba(255, 255, 255, 0.829);
+  }
+
+  .logo {
+    max-width: 28vw;
+  }
+
+  .logo-mobile {
+    max-width: 50vw;
+  }
+
+  .header-container {
+    margin: .5rem 0rem;
+  }
+
+  .background {
+    background: url(../statics/backgrounds/stamps.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 100%;
+    overflow: hidden;
+  }
+
+  .set-size-outer {
+    max-width: 65vh;
+  }
+
+  .white-text {
+    color: white;
+  }
+
+  .black-text {
+    color: black;
+  }
+
+  .grow {
+    transition: all .35s ease-in-out;
+  }
+
+  .grow:hover {
+    transform: scale(1.15);
+  }
+</style>
