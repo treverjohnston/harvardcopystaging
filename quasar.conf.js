@@ -20,9 +20,9 @@ module.exports = function (ctx) {
       'fontawesome-v5',
       // 'eva-icons',
       // 'themify',
-      // 'roboto-font-latin-ext', // this or either 'roboto-font', NEVER both!
+      'roboto-font-latin-ext', // this or either 'roboto-font', NEVER both!
 
-      'roboto-font', // optional, you are not bound to it
+      // 'roboto-font', // optional, you are not bound to it
       'material-icons' // optional, you are not bound to it
     ],
 
@@ -57,11 +57,18 @@ module.exports = function (ctx) {
         'QCardSection',
         'QCardActions',
         'QExpansionItem',
-        'QInput'
+        'QInput',
+        'QDialog',
+        'QCarousel',
+        'QCarouselControl',
+        'QCarouselSlide',
+        'QRating'
       ],
 
       directives: [
-        'Ripple'
+        'Ripple',
+        'ScrollFire',
+        'ClosePopup'
       ],
 
       // Quasar plugins
@@ -90,7 +97,10 @@ module.exports = function (ctx) {
     },
 
     // animations: 'all', // --- includes all animations
-    animations: [],
+    animations: [
+      // 'fadeIn',
+      // 'fadeOut'
+    ],
 
     ssr: {
       pwa: false

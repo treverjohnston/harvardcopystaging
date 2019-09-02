@@ -14,12 +14,7 @@
       <q-list separator class="col-md-6">
         <q-item clickable v-for="service in services">
           <q-item-section v-if="selected == service.id" @click="selected = service.id">
-            <p :class="service.highlightClass" v-anime="{ 
-  translateX: {
-    value:    ['-30px', '0px'],
-    duration: 4000,
-  } 
-   }">
+            <p :class="service.highlightClass" v-anime="{ translateX: { value: ['-30px', '0px'], duration: 4000, }}">
               {{service.name}}
             </p>
           </q-item-section>
@@ -50,23 +45,20 @@
     <!-- END DESKTOP -->
 
     <!-- MOBILE -->
-    <div class="row justify-center header mobile-only">
-      <q-list bordered :class="service.classMobile" v-for="service in services" v-anime="{ 
-  translateY: {
-    value:    ['-30px', '0px'],
-    duration: 4000
-  }
-   }">
-        <q-expansion-item expand-separator :label="service.name" class="text-white" expand-icon-class="text-white">
-          <q-card>
-            <q-card-section v-for="sub in service.subservices" class="text-black">
-              {{sub}}
-            </q-card-section>
-          </q-card>
-        </q-expansion-item>
-      </q-list>
-      <q-btn to="/contact" color="info" size="lg" outline rounded no-caps class="quote-btn shadow-24">Request a Quote
-      </q-btn>
+    <div class="row justify-center header mobile-only" >
+      <div  v-anime="{ translateY: { value: ['-30px', '0px'], duration: 4000 } }" class="col-xs-11">
+        <q-list bordered :class="service.classMobile" v-for="service in services">
+          <q-expansion-item expand-separator :label="service.name" class="text-white" expand-icon-class="text-white">
+            <q-card>
+              <q-card-section v-for="sub in service.subservices" class="text-black">
+                {{sub}}
+              </q-card-section>
+            </q-card>
+          </q-expansion-item>
+        </q-list>
+      </div>
+        <q-btn to="/contact" color="info" size="lg" outline rounded no-caps class="quote-btn shadow-24 col-xs-8">Request a Quote
+        </q-btn>
     </div>
     <!-- END MOBILE -->
   </q-page>

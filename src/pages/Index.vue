@@ -5,12 +5,8 @@
                 <h2 class="desktop-only">Welcome to Harvard Print and Copy Center</h2>
                 <h4 class="mobile-only">Welcome to Harvard Print and Copy Center</h4>
             </div>
-            <div class="col-sm-11 col-md-8 text-justify" v-anime="{ 
-  translateY: {
-    value:    ['-50px', '0px'],
-    duration: 2000,
-  } 
-   }">
+            <div class="col-sm-11 col-md-8 text-justify"
+                v-anime="{ translateY: { value:['-50px', '0px'], duration: 2000,} }">
                 <div class="text-body1 paragraph">HARVARD Print & Copy CENTER is a full service printing and copying
                     place, with
                     more than 20 years
@@ -32,13 +28,8 @@
             </div>
         </div>
         <div class="row justify-center header text-center">
-
-            <q-card @click.native="push(card.link)" v-for="card in cardServices" :class="card.class" v-anime="{ 
-          translateY: {
-            value:    ['-100px', '0px'],
-            duration: 4000,
-          } 
-           }">
+            <q-card @click.native="push(card.link)" v-for="card in cardServices" :class="card.class"
+                v-anime="{ translateY: {value: ['-100px', '0px'], duration: 4000, }}">
                 <q-card-section>
                     <div class="text-h6">{{card.name}}</div>
                 </q-card-section>

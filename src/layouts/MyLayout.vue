@@ -9,7 +9,9 @@
               </q-btn>
             </div>
             <div class="col-5">
-              <img class="logo-mobile" src="../assets/harvard-logo.png" alt="Harvard Copy logo" />
+              <q-btn flat @click="$router.push('/')">
+                <img class="logo-mobile" src="../assets/harvard-logo.png" alt="Harvard Copy logo" />
+              </q-btn>
             </div>
           </div>
         </div>
@@ -151,6 +153,24 @@
   }
 
   .grow:hover {
-    transform: scale(1.15);
+    transform: scale(1.1);
+  }
+
+  .grow:hover .hidden-text {
+    opacity: 1;
+  }
+
+  .not-loaded {
+    opacity: 0;
+
+    -webkit-transition: opacity 2s ease-in;
+    -moz-transition: opacity 2s ease-in;
+    -ms-transition: opacity 2s ease-in;
+    -o-transition: opacity 2s ease-in;
+    transition: opacity 2s ease-in;
+  }
+
+  .loaded {
+    opacity: 1;
   }
 </style>

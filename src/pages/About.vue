@@ -7,22 +7,10 @@
             </div>
         </div>
         <div class="row justify-between header text-center">
-            <div class="col-md-3 desktop-only" v-anime="{ 
-  translateX: {
-    value:    ['-50px', '0px'],
-    duration: 1000,
-    easing:'easeInSine'
-  }  
-   }">
+            <div class="col-md-3 desktop-only" v-anime="{ translateY: { value: ['-20px', '0px'], duration: 2000, } }">
                 <q-img src="../assets/office.png" alt="Harvard Print and Copy office" class="shadow-24"></q-img>
             </div>
-            <div class="col-sm-10 col-md-8 text-justify text shadow-12" v-anime="{ 
-  translateX: {
-    value:    ['50px', '0px'],
-     duration: 1000,
-    easing:'easeInSine'
-  }  
-   }">
+            <div class="col-sm-10 col-md-8 text-justify text shadow-12" v-anime="{ translateY: { value: ['-20px', '0px'], duration: 2500, } }">
                 <h6 class="text-weight-regular desktop-only">
                     HARVARD Print and Copy CENTER is a family owned business which provides Printing, Graphics
                     Design and Copy Services to
@@ -55,6 +43,8 @@
                     as Chevron, Bank of America, Harvard University, Pacific Bell, local schools and small
                     businesses.
                 </p>
+                <img src="../assets/office.png" alt="Harvard Print and Copy office" width="300"
+                    class="mobile-only"></img>
                 <p class="text-weight-regular mobile-only">
                     After 20 years in Danville, we recently moved our office to 2010 Crow Canyon Place, Suite 100 in
                     San Ramon, CA. Our new
@@ -63,9 +53,6 @@
                     such as Costco and Marshalls which are catty corner from us, Starbucks, Petco and Sees Candy
                     across the street from us.
                 </p>
-            </div>
-            <div class="col-sm-10 mobile-only">
-                <q-img src="../assets/office.png" alt="Harvard Print and Copy office"></q-img>
             </div>
         </div>
     </q-page>
@@ -88,6 +75,10 @@
 </script>
 
 <style scoped>
+    .mobile-office {
+        margin: 1rem 0;
+    }
+
     .text {
         border: 1px solid black;
         padding: 1rem;
