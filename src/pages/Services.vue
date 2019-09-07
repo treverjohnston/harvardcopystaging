@@ -2,7 +2,9 @@
   <q-page padding>
     <div class="row justify-center header text-center">
       <div class="col-sm-10 col-md-12 heading">
-        <h2 class="desktop-only text-bold">Harvard Print and Copy Services</h2>
+        <h3 class="desktop-only text-regular">Harvard Print and Copy Center</h3>
+        <hr class="heading-hr">
+        <h2 class="desktop-only text-bold">Print/Copy Services</h2>
         <!-- <q-btn to="/contact" color="info" size="xl" outline rounded no-caps class="quote-btn shadow-24 desktop-only">
           Request a Quote
         </q-btn> -->
@@ -34,7 +36,7 @@
 
           <q-separator dark inset />
           <q-card-section v-for="sub in services[selected].subservices" class="sub">
-            - {{sub}}
+            <q-icon name="fa fa-check-square" /> {{sub}}
           </q-card-section>
         </q-card>
         <q-btn to="/contact" color="info" size="lg" outline rounded no-caps class="quote-btn shadow-24 float-right">
@@ -45,8 +47,8 @@
     <!-- END DESKTOP -->
 
     <!-- MOBILE -->
-    <div class="row justify-center header mobile-only" >
-      <div  v-anime="{ translateY: { value: ['-30px', '0px'], duration: 4000 } }" class="col-xs-11">
+    <div class="row justify-center header mobile-only">
+      <div v-anime="{ translateY: { value: ['-30px', '0px'], duration: 4000 } }" class="col-xs-11">
         <q-list bordered :class="service.classMobile" v-for="service in services">
           <q-expansion-item expand-separator :label="service.name" class="text-white" expand-icon-class="text-white">
             <q-card>
@@ -57,8 +59,9 @@
           </q-expansion-item>
         </q-list>
       </div>
-        <q-btn to="/contact" color="info" size="lg" outline rounded no-caps class="quote-btn shadow-24 col-xs-8">Request a Quote
-        </q-btn>
+      <q-btn to="/contact" color="info" size="lg" outline rounded no-caps class="quote-btn shadow-24 col-xs-8">Request a
+        Quote
+      </q-btn>
     </div>
     <!-- END MOBILE -->
   </q-page>

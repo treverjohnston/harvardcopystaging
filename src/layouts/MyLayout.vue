@@ -101,8 +101,26 @@
 </script>
 
 <style>
+  .text-padding {
+    padding: 2rem;
+  }
+
+  .heading-hr {
+    width: 20vw;
+    border-color: #31CCEC;
+  }
+
   .heading {
     color: #31CCEC;
+  }
+
+  .white-background {
+    background-color: white;
+  }
+
+  .second-header {
+    background-color: rgba(49, 205, 236, 0.95);
+    padding: 2rem 2rem;
   }
 
   .header {
@@ -110,7 +128,12 @@
     padding: 2rem 2rem;
   }
 
+  .header-padding {
+    padding: 0rem 0rem 10rem 0rem;
+  }
+
   .toolbar {
+    border-top: 4px solid #31CCEC;
     background-color: rgba(255, 255, 255, 0.829);
   }
 

@@ -1,13 +1,16 @@
 <template>
   <q-page padding>
-    <div class="row justify-center header text-center">
+    <div class="row justify-center header text-center header-padding">
       <div class="col-sm-10 col-md-12 heading">
-        <h2 class="desktop-only text-bold">Harvard Litigation Services</h2>
+        <h3 class="desktop-only text-regular">Harvard Print and Copy Center</h3>
+        <hr class="heading-hr">
+        <h2 class="desktop-only text-bold">Litigation Services</h2>
         <h4 class="mobile-only">Harvard Litigation Services</h4>
       </div>
     </div>
-    <div class="row justify-center header">
-      <div class="col-xs-10 col-sm-8 col-md-8">
+    <div class="row justify-center second-header header-padding">
+      <div class="col-xs-10 col-sm-8 col-md-8 white-background shadow-12 text-padding"
+        v-anime="{ translateY: { value: ['300px', '-150px'], duration: 2500, } }">
         <h6 class="text-weight-regular desktop-only">Harvard Litigation Services has been providing litigation support
           services to
           the SF bay area community for
@@ -32,15 +35,43 @@
         </p>
 
         <ul class="desktop-only" v-scroll-fire="fadeInImage">
-          <li class="text-h6 text-weight-light">Litigation Copying</li>
-          <li class="text-h6 text-weight-light">Trial Exhibit (full color digital copies or black & white)</li>
-          <li class="text-h6 text-weight-light">Document Scanning</li>
-          <li class="text-h6 text-weight-light">Poster, Banners & Signs</li>
-          <li class="text-h6 text-weight-light">X-Ray Copies</li>
-          <li class="text-h6 text-weight-light">High Speed Copies</li>
-          <li class="text-h6 text-weight-light">Color Laser Copies</li>
-          <li class="text-h6 text-weight-light">Large Format Copying (Blueprints, etc.)</li>
-          <li class="text-h6 text-weight-bold">and More!</li>
+          <li style="list-style-type: none;">
+            <q-icon name="check" size="md" class="" />
+            <span class="text-h6 text-weight-light vertical-middle">Litigation Copying</span>
+          </li>
+          <li style="list-style-type: none;">
+            <q-icon name="check" size="md" class="" />
+            <span class="text-h6 text-weight-light vertical-middle">Trial Exhibit (full color digital copies or black &
+              white)</span>
+          </li>
+          <li style="list-style-type: none;">
+            <q-icon name="check" size="md" class="" />
+            <span class="text-h6 text-weight-light vertical-middle">Document Scanning</span>
+          </li>
+          <li style="list-style-type: none;">
+            <q-icon name="check" size="md" class="" />
+            <span class="text-h6 text-weight-light vertical-middle">Poster, Banners & Signs</span>
+          </li>
+          <li style="list-style-type: none;">
+            <q-icon name="check" size="md" class="" />
+            <span class="text-h6 text-weight-light vertical-middle">X-Ray Copies</span>
+          </li>
+          <li style="list-style-type: none;">
+            <q-icon name="check" size="md" class="" />
+            <span class="text-h6 text-weight-light vertical-middle">High Speed Copies</span>
+          </li>
+          <li style="list-style-type: none;">
+            <q-icon name="check" size="md" class="" />
+            <span class="text-h6 text-weight-light vertical-middle">Color Laser Copies</span>
+          </li>
+          <li style="list-style-type: none;">
+            <q-icon name="check" size="md" class="" />
+            <span class="text-h6 text-weight-light vertical-middle">Large Format Copying (Blueprints, etc.)</span>
+          </li>
+          <li style="list-style-type: none;">
+            <q-icon name="check" size="md" class="" />
+            <span class="text-h6 text-weight-light vertical-middle">and More!</span>
+          </li>
         </ul>
 
         <ul class="mobile-only" v-scroll-fire="fadeInImage">
@@ -58,7 +89,7 @@
     </div>
     <div class="row justify-center header">
       <q-card v-for="service in litigationServices" class="col-xs-10 col-sm-4 col-md-3 card not-loaded"
-        :id="service.name">
+        v-anime="{ translateY: { value: ['0px', '-150px'], duration: 2500, } }" :id="service.name">
         <q-img :src="service.pic" @click="setSelectedService(service)" class="grow card-img" :alt="service.name">
           <div class="q-display-4 text-center fullscreen">
             <div class="row justify-center">

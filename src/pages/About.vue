@@ -1,17 +1,21 @@
 <template>
     <q-page padding>
-        <div class="row justify-center header text-center">
+        <div class="row justify-center header text-center header-padding">
             <div class="col-sm-10 col-md-12 heading">
-                <h2 class="desktop-only text-bold">About Harvard Print and Copy</h2>
+                <h3 class="desktop-only text-regular">Harvard Print and Copy Center</h3>
+                <hr class="heading-hr">
+                <h2 class="desktop-only text-bold">About</h2>
                 <h4 class="mobile-only">About Harvard Print and Copy</h4>
             </div>
         </div>
-        <div class="row justify-between header text-center">
+        <!-- <div class="row justify-center header text-center">
             <div class="col-md-3 desktop-only" v-anime="{ translateY: { value: ['-20px', '0px'], duration: 2000, } }">
                 <q-img src="../statics/office.png" alt="Harvard Print and Copy office" class="shadow-24"></q-img>
             </div>
-            <div class="col-sm-10 col-md-8 text-justify text shadow-12"
-                v-anime="{ translateY: { value: ['-20px', '0px'], duration: 2500, } }">
+        </div> -->
+        <div class="row justify-center second-header">
+            <div class="col-sm-10 col-md-8 text-justify text-padding shadow-12 white-background"
+                v-anime="{ translateY: { value: ['0px', '-150px'], duration: 2500, } }">
                 <h6 class="text-weight-regular desktop-only">
                     HARVARD Print and Copy CENTER is a family owned business which provides Printing, Graphics
                     Design and Copy Services to
@@ -78,10 +82,5 @@
 <style scoped>
     .mobile-office {
         margin: 1rem 0;
-    }
-
-    .text {
-        border: 1px solid black;
-        padding: 1rem;
     }
 </style>

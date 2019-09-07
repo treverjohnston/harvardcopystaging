@@ -88,9 +88,9 @@ export default {
       ],
       id: 0,
       value: 'copy',
-      class: 'bg-info card',
-      highlightClass: 'text-bold service bg-info selected shadow-16',
-      classMobile: 'bg-info col-xs-10  expansion-space shadow-16'
+      class: 'bg-positive card',
+      highlightClass: 'text-bold service bg-positive selected shadow-16',
+      classMobile: 'bg-positive col-xs-10  expansion-space shadow-16'
     },
     {
       name: 'Direct Mail',
@@ -125,9 +125,9 @@ export default {
       ],
       id: 2,
       value: 'office',
-      class: 'bg-positive card',
-      highlightClass: 'text-bold service bg-positive selected shadow-16',
-      classMobile: 'bg-positive col-xs-10  expansion-space shadow-16'
+      class: 'bg-info card',
+      highlightClass: 'text-bold service bg-info selected shadow-16',
+      classMobile: 'bg-info col-xs-10  expansion-space shadow-16'
     },
     {
       name: 'Announcements and Invitations',

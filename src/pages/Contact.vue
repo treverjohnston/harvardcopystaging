@@ -2,7 +2,9 @@
   <q-page padding>
     <div class="row justify-center header text-center">
       <div class="col-sm-10 col-md-12 heading">
-        <h2 class="desktop-only text-bold">Contact Harvard Print and Copy Services</h2>
+        <h3 class="desktop-only text-regular">Harvard Print and Copy Center</h3>
+        <hr class="heading-hr">
+        <h2 class="desktop-only text-bold">Contact</h2>
         <h4 class="mobile-only"> Contact Harvard Print and Copy Services</h4>
       </div>
     </div>
