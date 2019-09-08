@@ -1,12 +1,14 @@
 <template>
     <q-page padding>
-        <div class="row justify-center header text-center ">
-            <div class="col-sm-10 col-md-12 heading">
+        <div class="row justify-center header text-center header-padding">
+            <div class="col-sm-10 col-md-12 heading text-padding">
                 <h2 class="desktop-only">Welcome to Harvard Print and Copy Center</h2>
                 <h4 class="mobile-only">Welcome to Harvard Print and Copy Center</h4>
             </div>
-            <div class="col-sm-11 col-md-8 text-justify"
-                v-anime="{ translateY: { value:['-50px', '0px'], duration: 2000,} }">
+        </div>
+        <div class="row justify-center second-header text-center header-padding">
+            <div class="col-xs-10 col-sm-9 col-md-8 text-justify white-background text-padding shadow-12"
+                v-anime="{ translateY: { value:['50px', '-100px'], duration: 2000,} }">
                 <div class="text-body1 paragraph">HARVARD Print & Copy CENTER is a full service printing and copying
                     place, with
                     more than 20 years
@@ -29,7 +31,7 @@
         </div>
         <div class="row justify-center header text-center">
             <q-card @click.native="push(card.link)" v-for="card in cardServices" :class="card.class"
-                v-anime="{ translateY: {value: ['-100px', '0px'], duration: 4000, }}">
+                v-anime="{ translateY: {value: ['0px', '-150px'], duration: 4000, }}">
                 <q-card-section>
                     <div class="text-h6">{{card.name}}</div>
                 </q-card-section>

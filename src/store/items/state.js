@@ -56,7 +56,7 @@ export default {
     {
       name: 'Print/Copy Services',
       icon: 'fa fa-paint-brush',
-      class: 'col-xs-10 col-sm-4 col-md-5 bg-info text-white card',
+      class: 'col-xs-10 col-sm-4 col-md-5 bg-secondary text-white card',
       link: 'services',
     },
     {
@@ -68,7 +68,7 @@ export default {
     {
       name: 'About',
       icon: 'fa fa-users',
-      class: 'col-xs-10 col-sm-4 col-md-5 text-white card bg-secondary',
+      class: 'col-xs-10 col-sm-4 col-md-5 text-white card bg-info',
       link: 'about',
     },
     {
