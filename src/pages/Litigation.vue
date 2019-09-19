@@ -36,40 +36,40 @@
 
         <ul class="desktop-only" v-scroll-fire="fadeInImage">
           <li style="list-style-type: none;">
-            <q-icon name="check" size="md" class="" />
+            <q-icon name="fa fa-check" size="sm" class="q-mr-sm" />
             <span class="text-h6 text-weight-light vertical-middle">Litigation Copying</span>
           </li>
           <li style="list-style-type: none;">
-            <q-icon name="check" size="md" class="" />
+            <q-icon name="fa fa-check" size="sm" class="q-mr-sm" />
             <span class="text-h6 text-weight-light vertical-middle">Trial Exhibit (full color digital copies or black &
               white)</span>
           </li>
           <li style="list-style-type: none;">
-            <q-icon name="check" size="md" class="" />
+            <q-icon name="fa fa-check" size="sm" class="q-mr-sm" />
             <span class="text-h6 text-weight-light vertical-middle">Document Scanning</span>
           </li>
           <li style="list-style-type: none;">
-            <q-icon name="check" size="md" class="" />
+            <q-icon name="fa fa-check" size="sm" class="q-mr-sm" />
             <span class="text-h6 text-weight-light vertical-middle">Poster, Banners & Signs</span>
           </li>
           <li style="list-style-type: none;">
-            <q-icon name="check" size="md" class="" />
+            <q-icon name="fa fa-check" size="sm" class="q-mr-sm" />
             <span class="text-h6 text-weight-light vertical-middle">X-Ray Copies</span>
           </li>
           <li style="list-style-type: none;">
-            <q-icon name="check" size="md" class="" />
+            <q-icon name="fa fa-check" size="sm" class="q-mr-sm" />
             <span class="text-h6 text-weight-light vertical-middle">High Speed Copies</span>
           </li>
           <li style="list-style-type: none;">
-            <q-icon name="check" size="md" class="" />
+            <q-icon name="fa fa-check" size="sm" class="q-mr-sm" />
             <span class="text-h6 text-weight-light vertical-middle">Color Laser Copies</span>
           </li>
           <li style="list-style-type: none;">
-            <q-icon name="check" size="md" class="" />
+            <q-icon name="fa fa-check" size="sm" class="q-mr-sm" />
             <span class="text-h6 text-weight-light vertical-middle">Large Format Copying (Blueprints, etc.)</span>
           </li>
           <li style="list-style-type: none;">
-            <q-icon name="check" size="md" class="" />
+            <q-icon name="fa fa-check" size="sm" class="q-mr-sm" />
             <span class="text-h6 text-weight-light vertical-middle">and More!</span>
           </li>
         </ul>
