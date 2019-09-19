@@ -1,8 +1,8 @@
 <template>
-  <q-page padding>
+  <q-page>
     <div class="row justify-center header text-center">
       <div class="col-sm-10 col-md-12 heading">
-        <h3 class="desktop-only text-regular">Harvard Print and Copy Center</h3>
+        <h1 class="desktop-only text-regular">Harvard Print and Copy Center</h1>
         <h5 text-regular class="mobile-only">Harvard Print and Copy Center</h5>
         <hr class="heading-hr">
         <h2 class="desktop-only text-bold">Print/Copy Services</h2>
@@ -37,7 +37,10 @@
 
           <q-separator dark inset />
           <q-card-section v-for="sub in services[selected].subservices" class="sub">
-            <q-icon name="fa fa-check-square" /> {{sub}}
+            <q-icon name="fa fa-check-square" class="self-center" />
+            <span class="">
+              {{sub}}
+            </span>
           </q-card-section>
         </q-card>
         <q-btn to="/contact" color="info" size="lg" outline rounded no-caps class="quote-btn shadow-24 float-right">

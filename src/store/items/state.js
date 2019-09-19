@@ -24,6 +24,46 @@ export default {
       id: 2,
       link: 'https://www.yelp.com/biz/harvard-print-and-copy-center-san-ramon?hrid=Pk0L0u3LJAXpD8G2ZS5s6A&utm_campaign=www_review_share_popup&utm_medium=copy_link&utm_source=(direct)'
     },
+    {
+      name: 'Olivia H.',
+      review: 'My coworker and I have used Harvard numerous times for various flyers, banners and collateral needed for our marketing events. I have never experienced such wonderful and accommodating customer service from any other business. Marc is always professional, friendly and willing to work outside of business hours to complete our orders on time. \n \nThe prices are also always significantly less than any other quotes we receive from other companies - and the quality is never compromised. Marc is very patient to make sure he fully understands the specifications of our order and will go out of his way to deliver at a time and location convenient to us if necessary. \n \n We will continue to use Harvard for our marketing events and other printing needs. Thank you Marc!',
+      rating: 5,
+      reviewer: 'Olivia H.',
+      id: 3,
+      link: 'https://www.yelp.com/biz/harvard-print-and-copy-center-san-ramon?hrid=VEZ-Zm9hbX_ksFTMLFx7aw&utm_campaign=www_review_share_popup&utm_medium=copy_link&utm_source=(direct)'
+    },
+    {
+      name: 'Andrea M.',
+      review: 'I called Harvard Print and Copy with a rush print job, 10 minutes before closing and in a serious jam. Marc, the owner, was beyond courteous and accommodating. He took the job and stayed until 9:40p and even offered to deliver it to where we needed it to be that night! Talk about a company that goes above and beyond with customer service. I highly recommend this business and would give them a 10 star rating if that was an option.',
+      rating: 5,
+      reviewer: 'Andrea M.',
+      id: 4,
+      link: 'https://www.yelp.com/biz/harvard-print-and-copy-center-san-ramon?hrid=iDFPpT6WuY7ttP649JmQwg&utm_campaign=www_review_share_popup&utm_medium=copy_link&utm_source=(direct)'
+    },
+    {
+      name: 'Nick C.',
+      review: 'The banners my company has ordered are always printed with strict attention to detail, quality assurance, in a timely manner. Marc ensures that our orders are printed to spec and verifies with me personally, if he finds something awry. A Marine veteran himself, the pride he puts in his product, business, and customer service is apparent.  We look forward to continuing doing business with Marc and Harvard Print.',
+      rating: 5,
+      reviewer: 'Nick C.',
+      id: 5,
+      link: 'https://www.yelp.com/biz/harvard-print-and-copy-center-san-ramon?hrid=0dBFv9XEoaG2rDVbf_uYHw&utm_campaign=www_review_share_popup&utm_medium=copy_link&utm_source=(direct)'
+    },
+    {
+      name: 'Barbara H.',
+      review: 'We had a large shiny poster printed for a wedding event at Harvard.  It included the names of about 100 people, with a design selected over Etsy.  With weddings, there are always last-minute changes, so the names kept changing.  Harvard was able to print a flawless poster in less than 24 hours.  We were overjoyed, and they were a pleasure to work with.',
+      rating: 5,
+      reviewer: 'Barbara H.',
+      id: 6,
+      link: 'https://www.yelp.com/biz/harvard-print-and-copy-center-san-ramon?hrid=Gz-evq1PtYhTwH8XbWvBlQ&utm_campaign=www_review_share_popup&utm_medium=copy_link&utm_source=(direct)'
+    },
+    {
+      name: 'Leticia M.',
+      review: 'Incredible service and beautiful quality!  I contacted Harvard Print in a pinch. I usually go to larger printing companies for my small print projects so this is my first experience with Harvard. I needed to get high quality printing for a wedding program I created and the companies I have used did not produce acceptable proofs for such an important print project. I was in a panic only having a few days to get this project completed and contacted Harvard based on the favorable reviews on Yelp. I am so happy that I did! Marc was extremely helpful from start to finish. He reviewed my document and gave me a quick quote that came in significantly less than the other places I tried first (not to mention his quote included cutting to size, scoring and folding the cardstock). Marc printed a proof to review and I was beyond impressed with both the cardstock and print quality.  I immediately approved the proof and Marc quickly completed the project knowing I was on a tight timeline. He called me as soon as the print job was complete and offered to deliver it to me if I couldn\'t make it by close to pick it up....what service!  I would highly recommend Marc and Harvard Print!',
+      rating: 5,
+      reviewer: 'Leticia M.',
+      id: 7,
+      link: 'https://www.yelp.com/biz/harvard-print-and-copy-center-san-ramon?hrid=4s0VSgiU6BuODnxv6Z44Aw&utm_campaign=www_review_share_popup&utm_medium=copy_link&utm_source=(direct)'
+    },
   ],
   litigationServices: [
     {
@@ -56,25 +96,25 @@ export default {
     {
       name: 'Print/Copy Services',
       icon: 'fa fa-paint-brush',
-      class: 'col-xs-10 col-sm-4 col-md-5 bg-secondary text-white card',
+      class: 'col-xs-10 col-sm-4 col-md-5 col-xl-5 bg-secondary text-white card',
       link: 'services',
     },
     {
       name: 'Litigation Services',
       icon: 'fa fa-file-invoice',
-      class: 'col-xs-10 col-sm-4 col-md-5 text-white card bg-accent',
+      class: 'col-xs-10 col-sm-4 col-md-5 col-lg-4 col-xl-5 text-white card bg-accent',
       link: 'litigation',
     },
     {
       name: 'About',
       icon: 'fa fa-users',
-      class: 'col-xs-10 col-sm-4 col-md-5 text-white card bg-info',
+      class: 'col-xs-10 col-sm-4 col-md-5 col-lg-4 col-xl-5 text-white card bg-info',
       link: 'about',
     },
     {
       name: 'Contact/Request A Quote',
       icon: 'fa fa-paper-plane',
-      class: 'col-xs-10 col-sm-4 col-md-5 text-white card bg-warning',
+      class: 'col-xs-10 col-sm-4 col-md-5 col-lg-4 col-xl-5 text-white card bg-warning',
       link: 'contact',
     }
 

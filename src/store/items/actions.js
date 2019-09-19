@@ -1,7 +1,7 @@
 import axios from 'axios'
 
 var production = !window.location.host.includes('localhost');
-var baseUrl = production ? '//quick-gifter.herokuapp.com/' : '//localhost:3000/';
+var baseUrl = production ? '//harvardcopy.ebenezerwebsites.com/' : '//localhost:3000/';
 
 let api = axios.create({
     baseURL: baseUrl + 'api/',
@@ -12,10 +12,8 @@ let api = axios.create({
 export function submitEntry({ commit, dispatch }, obj) {
     api.post('items', obj)
         .then(res => {
-            console.log("res", res)
         })
         .catch(err => {
-            console.error("eerrrroror",err)
         })
 }
 
@@ -25,7 +23,6 @@ export function getItems({ commit, dispatch }) {
             commit('setItems', res.data.data)
         })
         .catch(err => {
-            console.log("eerrrroror", err)
         })
 }
 
@@ -50,13 +47,13 @@ export function editEntry({ commit, dispatch }, obj) {
         })
 }
 //Takes a max
-export function sortBy({commit, dispatch}, sort){
+export function sortBy({ commit, dispatch }, sort) {
     var sortNum = parseFloat(sort);
     commit('sortItems', sortNum);
 }
 
 //Takes a min and a max
 //Can probably make this one function, but I don't wanna
-export function filterItems({commit, dispatch}, obj){
+export function filterItems({ commit, dispatch }, obj) {
     commit('sortItemsRange', obj);
 }

@@ -1,8 +1,8 @@
 <template>
-  <q-page padding>
+  <q-page>
     <div class="row justify-center header text-center header-padding">
       <div class="col-sm-10 col-md-12 heading">
-        <h3 class="desktop-only text-regular">Harvard Print and Copy Center</h3>
+        <h1 class="desktop-only text-regular">Harvard Print and Copy Center</h1>
         <h5 text-regular class="mobile-only">Harvard Print and Copy Center</h5>
         <hr class="heading-hr">
         <h2 class="desktop-only text-bold">Litigation Services</h2>
@@ -11,24 +11,23 @@
     </div>
     <div class="row justify-center second-header header-padding">
       <div class="col-xs-10 col-sm-8 col-md-8 white-background shadow-12 text-padding"
-        v-anime="{ translateY: { value: ['300px', '-150px'], duration: 2500, } }">
-        <h6 class="text-weight-regular desktop-only">Harvard Litigation Services has been providing litigation support
-          services to
-          the SF bay area community for
-          over 20
-          years. We understand your firm’s needs and have the expertise to get the job done right and on time.</h6>
+        v-anime="{opacity: { value: ['0', '1'], duration: 500,delay:300 }, translateY: { value: ['100px', '-125px'], duration: 1000},  easing: 'linear' }">
+        <h6 class="text-weight-regular desktop-only">Harvard Litigation Services offers litigation support services to
+          the SF bay area community for over {{years}} years. <b class="heading">We are now servicing the Boise, Idaho
+            area as well.</b> We understand your firm’s needs and have the expertise to get the
+          job done
+          right and on time.</h6>
         <h6 class="text-bold desktop-only">We are your one stop shop for trial prep and litigation copying needs
           providing the
           following litigation support
           services in-house:
         </h6>
 
-        <p class="text-weight-regular mobile-only">Harvard Litigation Services has been providing litigation support
-          services
-          to
-          the SF bay area community for
-          over 20
-          years. We understand your firm’s needs and have the expertise to get the job done right and on time.</p>
+        <p class="text-weight-regular mobile-only">Harvard Litigation Services offers litigation support services to
+          the SF bay area community for over {{years}} years. <b class="heading">We are now servicing the Boise, Idaho
+            area as well.</b> We understand your firm’s needs and have the expertise to get the
+          job done
+          right and on time.</p>
         <p class="text-bold mobile-only">We are your one stop shop for trial prep and litigation copying needs providing
           the
           following litigation support
@@ -75,15 +74,24 @@
           </li>
         </ul>
 
-        <ul class="mobile-only" v-scroll-fire="fadeInImage">
-          <li class="text-weight-light">Litigation Copying</li>
-          <li class="text-weight-light">Trial Exhibit (full color digital copies or black & white)</li>
-          <li class="text-weight-light">Document Scanning</li>
-          <li class="text-weight-light">Poster, Banners & Signs</li>
-          <li class="text-weight-light">X-Ray Copies</li>
-          <li class="text-weight-light">High Speed Copies</li>
-          <li class="text-weight-light">Color Laser Copies</li>
-          <li class="text-weight-light">Large Format Copying (Blueprints, etc.)</li>
+        <ul class="mobile-only" v-scroll-fire="fadeInImage" style="list-style-type: none;">
+          <li class="text-weight-light">
+            <q-icon name="check" size="xs" class="" />
+            Litigation Copying</li>
+          <li class="text-weight-light">
+            <q-icon name="check" size="xs" class="" />Trial Exhibit (full color digital copies or black & white)</li>
+          <li class="text-weight-light">
+            <q-icon name="check" size="xs" class="" />Document Scanning</li>
+          <li class="text-weight-light">
+            <q-icon name="check" size="xs" class="" />Poster, Banners & Signs</li>
+          <li class="text-weight-light">
+            <q-icon name="check" size="xs" class="" />X-Ray Copies</li>
+          <li class="text-weight-light">
+            <q-icon name="check" size="xs" class="" />High Speed Copies</li>
+          <li class="text-weight-light">
+            <q-icon name="check" size="xs" class="" />Color Laser Copies</li>
+          <li class="text-weight-light">
+            <q-icon name="check" size="xs" class="" />Large Format Copying (Blueprints, etc.)</li>
           <li class="text-weight-bold">and More!</li>
         </ul>
       </div>
@@ -151,6 +159,10 @@
     computed: {
       litigationServices() {
         return this.$store.state.items.litigationServices;
+      },
+      years() {
+        var y = new Date;
+        return parseInt(y.getFullYear()) - 1995;
       }
     },
     methods: {

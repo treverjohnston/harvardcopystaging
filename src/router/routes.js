@@ -11,6 +11,7 @@ const routes = [
       { path: '/litigation', component: () => import('pages/Litigation.vue') },
       { path: '/contact', component: () => import('pages/Contact.vue') },
       { path: '/reviews', component: () => import('pages/Reviews.vue') },
+      { path: '/admin', component: () => import('pages/Admin.vue') },
     ]
   }
 ]
