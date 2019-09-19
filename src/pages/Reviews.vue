@@ -18,7 +18,7 @@
               {{review.review}}
             </q-card-section>
             <q-card-section>
-              <q-rating v-model="ratingModel" size="2.5rem" color="yellow" icon="star" readonly />
+              <q-rating v-model="ratingModel" size="2.5rem" color="yellow" icon="fa fa-star" readonly />
             </q-card-section>
             <q-card-section class="q-mt-md text-center text-black text-h6">
               <q-btn flat no-caps @click.native="openURL(review.link)">
