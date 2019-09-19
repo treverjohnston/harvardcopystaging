@@ -5,7 +5,7 @@
         <div class="mobile-only text-black">
           <div class="full-width row no-wrap justify-start items-start content-start header-container">
             <div class="col-7">
-              <q-btn flat @click="leftDrawerOpen = !leftDrawerOpen" aria-label="Menu" icon="menu">
+              <q-btn flat @click="leftDrawerOpen = !leftDrawerOpen" aria-label="Menu" icon="fa fa-bars">
               </q-btn>
             </div>
             <div class="col-5">
