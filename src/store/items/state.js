@@ -96,25 +96,25 @@ export default {
     {
       name: 'Print/Copy Services',
       icon: 'fa fa-paint-brush',
-      class: 'col-xs-10 col-sm-4 col-md-5 col-xl-5 bg-secondary text-white card',
+      class: 'col-xs-10 col-sm-4 col-md-5 col-xl-5 bg-secondary text-white card-ind',
       link: 'services',
     },
     {
       name: 'Litigation Services',
       icon: 'fa fa-file-invoice',
-      class: 'col-xs-10 col-sm-4 col-md-5 col-lg-4 col-xl-5 text-white card bg-accent',
+      class: 'col-xs-10 col-sm-4 col-md-5 col-lg-4 col-xl-5 text-white card-ind bg-accent',
       link: 'litigation',
     },
     {
       name: 'About',
       icon: 'fa fa-users',
-      class: 'col-xs-10 col-sm-4 col-md-5 col-lg-4 col-xl-5 text-white card bg-info',
+      class: 'col-xs-10 col-sm-4 col-md-5 col-lg-4 col-xl-5 text-white card-ind bg-info',
       link: 'about',
     },
     {
       name: 'Contact/Request A Quote',
       icon: 'fa fa-paper-plane',
-      class: 'col-xs-10 col-sm-4 col-md-5 col-lg-4 col-xl-5 text-white card bg-warning',
+      class: 'col-xs-10 col-sm-4 col-md-5 col-lg-4 col-xl-5 text-white card-ind bg-warning',
       link: 'contact',
     }
 

@@ -9,17 +9,17 @@
         <div class="row justify-center second-header text-center header-padding desktop-only">
             <div class="col-xs-10 col-sm-9 col-md-8 text-justify white-background text-padding shadow-12"
                 v-anime="{opacity: { value: ['0', '1'], duration: 500,delay:300 }, translateY: { value: ['100px', '-125px'], duration: 1000},  easing: 'linear', delay:100 }">
-                <div class="text-h6 text-weight-regular paragraph">Harvard Print & Copy Center is a full service
+                <div class="text-h6 text-weight-regular paragraph-ind">Harvard Print & Copy Center is a full service
                     printing and copying
                     copmany, with
                     more than 20 years
                     hands-on experience.</div>
-                <div class="text-h6 text-weight-regular paragraph">
+                <div class="text-h6 text-weight-regular paragraph-ind">
                     We design and print our customers documents, invitations, and any project at hand. We boast
                     courteous same day service,
                     prompt in house bindery and fulfillment (direct mail) as well.
                 </div>
-                <div class="text-h6 text-weight-regular paragraph">
+                <div class="text-h6 text-weight-regular paragraph-ind">
                     We welcome small and large orders and offer great quality print products at reasonable prices.
                     Most
                     products are
@@ -45,16 +45,16 @@
         <div class="row justify-center second-header text-center header-padding mobile-only">
             <div class="col-xs-10 col-sm-9 col-md-8 text-justify white-background text-padding shadow-12 mobile-margin"
                 v-anime="{  opacity: { value: ['0', '1'], duration: 8000 }}">
-                <div class="text-body2 paragraph">Harvard Print & Copy Center is a full service printing and copying
+                <div class="text-body2 paragraph-ind">Harvard Print & Copy Center is a full service printing and copying
                     copmany, with
                     more than 20 years
                     hands-on experience.</div>
-                <div class="text-body2 paragraph">
+                <div class="text-body2 paragraph-ind">
                     We design and print our customers documents, invitations, and any project at hand. We boast
                     courteous same day service,
                     prompt in house bindery and fulfillment (direct mail) as well.
                 </div>
-                <div class="text-body2 paragraph">
+                <div class="text-body2 paragraph-ind">
                     We welcome small and large orders and offer great quality print products at reasonable prices.
                     Most
                     products are
@@ -81,7 +81,7 @@
 
                 <q-separator dark />
                 <q-card-section>
-                    <q-icon color="white" :name="card.icon" class="icon grow" />
+                    <q-icon color="white" :name="card.icon" class="icon-ind grow" />
                 </q-card-section>
             </q-card>
         </div>
@@ -113,18 +113,4 @@
 </script>
 
 <style scoped>
-    .icon {
-        font-size: 6rem;
-        margin: 2rem;
-    }
-
-    .card {
-        min-height: 30vh;
-        padding: 0rem 1rem;
-        margin: 1rem 1rem;
-    }
-
-    .paragraph {
-        padding: 1rem 0;
-    }
 </style>
