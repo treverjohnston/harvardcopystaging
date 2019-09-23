@@ -120,6 +120,13 @@
           </div>
         </q-img>
       </q-card>
+      <div class="col-xs-12 col-sm-9 col-md-10 text-center">
+        <q-btn to="/contact" size="lg" outline rounded no-caps class="heading shadow-24">
+          Request
+          a
+          Quote
+        </q-btn>
+      </div>
     </div>
     <q-dialog v-model="modal" minimized class="">
       <q-card class="">
@@ -139,6 +146,11 @@
           </div>
         </q-card-section>
         <q-card-section class="q-display-4 text-center q-mt-md">
+          <q-btn to="/contact" outline rounded no-caps class="q-mr-sm heading shadow-1">
+            Request
+            a
+            Quote
+          </q-btn>
           <q-btn outline rounded no-caps @click="modal = false" label="Close" />
         </q-card-section>
       </q-card>

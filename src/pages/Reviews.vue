@@ -13,8 +13,11 @@
       <div class="col-xs-12 col-sm-12 col-md-12 heading">
         <div class="row justify-center q-gutter-xl"
           v-anime="{opacity: { value: ['0', '1'], duration: 5000 }, translateY: { value: ['100px', '-125px'], duration: 2500, } }">
-          <q-card v-for="review in reviews" :name="review.id" class="col-xs-10 col-sm-8 col-md-3">
-            <q-card-section class="q-mt-md text-center text-black text-body1 review-text">
+          <q-card v-for="review in reviews" :name="review.id" class="col-xs-12 col-sm-8 col-md-3">
+            <q-card-section class="q-mt-md text-center text-black text-body1 review-text desktop-only">
+              {{review.review}}
+            </q-card-section>
+            <q-card-section class="q-mt-md text-justified text-black text-subtitle2 review-text mobile-only">
               {{review.review}}
             </q-card-section>
             <q-card-section>

@@ -79,9 +79,12 @@
                 <q-icon name="fa fa-paper-plane" class="q-mr-sm" /> info@harvardcopy.com
               </a>
             </div>
-            <q-btn class="q-mt-sm self-center" @click="launch('https://www.facebook.com/HARVARDCOPY')"
+            <q-btn class="q-mt-sm self-center" @click="openURL('https://www.facebook.com/HARVARDCOPY')"
               aria-label="Facebook Link" flat>
-              <q-icon size="3rem" name="fab fa-facebook-square" />
+              <q-icon size="3rem" class="q-mr-xs" name="fab fa-facebook-square" /> <iframe
+                src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fwww.facebook.com%2FHARVARDCOPY&width=140&layout=button_count&action=like&size=large&show_faces=false&share=true&height=46&appId"
+                width="140" height="46" style="border:none;overflow:hidden" class="self-center q-mt-sm" scrolling="no"
+                frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
             </q-btn>
             <div class="text-subtitle1 q-mt-lg">&copy;{{year}} Harvard Print and Copy Center</div>
             <div class="text-subtitle1">All rights reserved</div>
@@ -124,8 +127,11 @@
 
           <div class="col-md-4 self-center text-center q-mt-sm q-mb-md">
             <q-btn class="q-mt-sm self-center" aria-label="Facebook Link"
-              @click="launch('https://www.facebook.com/HARVARDCOPY')" flat>
-              <q-icon size="3rem" name="fab fa-facebook-square" />
+              @click="openURL('https://www.facebook.com/HARVARDCOPY')" flat>
+              <q-icon size="3rem" name="fab fa-facebook-square" /> <iframe
+                src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fwww.facebook.com%2FHARVARDCOPY&width=140&layout=button_count&action=like&size=large&show_faces=false&share=true&height=46&appId"
+                width="140" height="46" style="border:none;overflow:hidden" class="q-mt-sm" scrolling="no"
+                frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
             </q-btn>
             <div class="text-h5 q-mt-sm">
               <a href="mailto:info@harvardcopy.com" class="phoneNumber text-black">
@@ -178,6 +184,7 @@
       openURL,
       push(tab) {
         this.$router.push(tab.link)
+        this.leftDrawerOpen = false;
       }
     }
   }

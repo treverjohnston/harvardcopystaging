@@ -57,7 +57,7 @@
           <q-expansion-item expand-separator :label="service.name" class="text-white" expand-icon-class="text-white">
             <q-card>
               <q-card-section v-for="sub in service.subservices" class="text-black">
-                {{sub}}
+                <q-icon name="fa fa-check" class="q-mr-sm self-center" />{{sub}}
               </q-card-section>
             </q-card>
           </q-expansion-item>
