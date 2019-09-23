@@ -25,14 +25,15 @@
                     products are
                     manufactured and shipped the same day your order is placed. Shop your order first then email us with
                     a request for quote
-                    at <span class="heading">info@harvardcopy.com</span> or call us at <span class="heading">(925)
-                        855-9998 </span>. When you need
+                    at <a href="mailto:info@harvardcopy.com" class="phoneNumber heading">info@harvardcopy.com</a> or
+                    call us at <a href="tel:9258559998" class="phoneNumber heading">(925)
+                        855-9998</a>. When you need
                     fast, high quality printing,
                     call Harvard Print &
                     Copy Center!</div>
                 <h6 class="text-center text-bold">We are excited to announce as of 2019, we now have an office in Boise,
                     Idaho!
-                    For fast, friendly service in the the Treasure Valley, give Harvard Print & Copy Center a call
+                    For fast, friendly service in the the Treasure Valley, give Harvard Print & Copy Center a call!
                 </h6>
             </div>
         </div>
@@ -61,14 +62,15 @@
                     products are
                     manufactured and shipped the same day your order is placed. Shop your order first then email us with
                     a request for quote
-                    at <span class="heading">info@harvardcopy.com</span> or call us at <span class="heading">(925)
-                        855-9998 </span>. When you need
+                    at <a href="mailto:info@harvardcopy.com" class="phoneNumber heading">info@harvardcopy.com</a> or
+                    call us at <a href="tel:9258559998" class="phoneNumber heading">(925)
+                        855-9998</a>. When you need
                     fast, high quality printing,
                     call Harvard Print &
                     Copy Center!</div>
                 <div class="text-body2 text-center text-bold">We are excited to announce as of 2019, we now have an
                     office in Boise, Idaho!
-                    For fast, friendly service in the the Treasure Valley, give Harvard Print & Copy Center a call
+                    For fast, friendly service in the the Treasure Valley, give Harvard Print & Copy Center a call!
                 </div>
             </div>
         </div>
