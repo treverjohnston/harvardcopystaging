@@ -3,6 +3,12 @@
 
 module.exports = function (ctx) {
   return {
+    htmlVariables: {
+      title: 'Harvard Print & Copy Center',
+      description: 'Harvard Print & Copy Center is a full service printing and copying place, with more than 20 years hands-on experience. We design and print our customers documents, invitations, and any project at hand.',
+      imgUrl: 'statics/icons/harvardCopyOverUnder.jpeg',
+      webUrl: 'https://www.harvardcopy.com'
+    },
     // app boot file (/src/boot)
     // --> boot files are part of "main.js"
 

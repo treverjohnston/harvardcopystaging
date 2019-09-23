@@ -53,43 +53,36 @@
             <div class="text-h5">San Ramon Office:</div>
             <div class="text-subtitle2">2010 Crow Canyon Place, Suite 100</div>
             <div class="text-subtitle2">San Ramon, CA 94583</div>
-            <a href="tel:9258559998" class="phoneNumber heading text-subtitle1">
-              <q-btn flat>(925)-855-9998</q-btn>
+            <a href="tel:9258559998" class="phoneNumber heading">
+              <q-btn flat icon="fa fa-phone"><span class="q-ml-xs text-h5">(925)-855-9998</span></q-btn>
             </a>
-            <div class="text-subtitle2"><a :href="cali" target="_blank" rel="noopener">
-                <q-btn flat no-caps>View on map</q-btn>
+            <div class="text-subtitle2"><a :href="cali" target="_blank" rel="noopener" class="phoneNumber">
+                <q-btn flat no-caps icon="fa fa-compass"><span class="q-ml-xs">View on map</span></q-btn>
               </a></div>
             <div class="text-h5 q-mt-md">Boise Office:</div>
             <div class="text-subtitle2 ">11700 W Carmichael St</div>
             <div class="text-subtitle2 ">Boise, ID 83709</div>
-            <a href="tel:2089997994" class="phoneNumber heading text-subtitle1">
-              <q-btn flat>(208)-999-7994</q-btn>
+            <a href="tel:2089997994" class="phoneNumber heading">
+              <q-btn flat icon="fa fa-phone"><span class="q-ml-xs text-h5">(208)-999-7994</span></q-btn>
             </a>
-            <div class="text-subtitle2"><a :href="boise" target="_blank" rel="noopener">
-                <q-btn flat no-caps>View on map</q-btn>
+            <div class="text-subtitle2"><a :href="boise" target="_blank" rel="noopener" class="phoneNumber">
+                <q-btn flat no-caps icon="fa fa-compass"><span class="q-ml-xs">View on map</span></q-btn>
               </a></div>
-            <q-btn class="q-mt-sm self-center" @click="launch('https://www.facebook.com/HARVARDCOPY')"
-              aria-label="Facebook Link" flat>
-              <q-icon size="3rem" name="fab fa-facebook-square" />
-            </q-btn>
+
           </div>
           <div class="col-md-4 self-center">
             <q-img class="" src="../statics/icons/harvardCopyOverUnder.jpeg" alt="Harvard Copy Logo"></q-img>
           </div>
           <div class="col-md-4 self-center text-center q-mt-xl q-mb-xl">
-            <div class="text-h4 heading">
-              <a href="tel:9258559998" class="phoneNumber heading">
-                <q-icon name="fa fa-phone" class="q-mr-sm" />(925)-855-9998</a>
-            </div>
-            <div class="text-h4 heading">
-              <a href="tel:2089997994" class="phoneNumber heading">
-                <q-icon name="fa fa-phone" class="q-mr-sm" />(208)-999-7994</a>
-            </div>
             <div class="text-h5 q-mt-md text-black">
               <a href="mailto:info@harvardcopy.com" class="phoneNumber text-black">
                 <q-icon name="fa fa-paper-plane" class="q-mr-sm" /> info@harvardcopy.com
               </a>
             </div>
+            <q-btn class="q-mt-sm self-center" @click="launch('https://www.facebook.com/HARVARDCOPY')"
+              aria-label="Facebook Link" flat>
+              <q-icon size="3rem" name="fab fa-facebook-square" />
+            </q-btn>
             <div class="text-subtitle1 q-mt-lg">&copy;{{year}} Harvard Print and Copy Center</div>
             <div class="text-subtitle1">All rights reserved</div>
             <div class="text-subtitle1 q-mt-lg">Website By: <a href="https://www.ebenezerwebsites.com" rel="noopener"
@@ -111,39 +104,29 @@
             <div class="text-subtitle2">2010 Crow Canyon Place, Suite 100</div>
             <div class="text-subtitle2">San Ramon, CA 94583</div>
             <a href="tel:9258559998" class="phoneNumber heading text-subtitle1">
-              <q-btn flat no-caps>(925)-855-9998</q-btn>
+              <q-btn flat no-caps icon="fa fa-phone"><span class="q-ml-xs">(925)-855-9998</span></q-btn>
             </a>
-            <div class="text-subtitle2"><a :href="cali" target="_blank" rel="noopener">
-                <q-btn flat no-caps>View on map</q-btn>
+            <div class="text-subtitle2"><a :href="cali" target="_blank" rel="noopener" class="phoneNumber">
+                <q-btn flat no-caps icon="fa fa-compass"><span class="q-ml-xs">View on map</span></q-btn>
               </a></div>
             <div class="text-h5 q-mt-md">Boise Office:</div>
             <div class="text-subtitle2 ">11700 W Carmichael St</div>
             <div class="text-subtitle2 ">Boise, ID 83709</div>
             <a href="tel:2089997994" class="phoneNumber heading text-subtitle1">
-              <q-btn flat no-caps>(208)-999-7994</q-btn>
+              <q-btn flat no-caps icon="fa fa-phone"><span class="q-ml-xs">(208)-999-7994</span></q-btn>
             </a>
-            <div class="text-subtitle2"><a :href="boise" target="_blank" rel="noopener">
-                <q-btn flat no-caps>View on map</q-btn>
+            <div class="text-subtitle2"><a :href="boise" target="_blank" class="phoneNumber" rel="noopener">
+                <q-btn flat no-caps icon="fa fa-compass"><span class="q-ml-xs">View on map</span></q-btn>
               </a></div>
-            <q-btn class="q-mt-sm self-center" aria-label="Facebook Link"
-              @click="launch('https://www.facebook.com/HARVARDCOPY')" flat>
-              <q-icon size="3rem" name="fab fa-facebook-square" />
-            </q-btn>
+
             <hr>
           </div>
 
           <div class="col-md-4 self-center text-center q-mt-sm q-mb-md">
-            <div class="text-h4 heading">
-              <a href="tel:9258559998" class="phoneNumber heading">
-                <q-icon name="fa fa-phone" class="q-mr-sm" />
-                (925)-855-9998
-              </a> </div>
-            <div class="text-h4 heading">
-              <a href="tel:2089997994" class="phoneNumber heading">
-                <q-icon name="fa fa-phone" class="q-mr-sm" />
-                (208)-999-7994
-              </a>
-            </div>
+            <q-btn class="q-mt-sm self-center" aria-label="Facebook Link"
+              @click="launch('https://www.facebook.com/HARVARDCOPY')" flat>
+              <q-icon size="3rem" name="fab fa-facebook-square" />
+            </q-btn>
             <div class="text-h5 q-mt-sm">
               <a href="mailto:info@harvardcopy.com" class="phoneNumber text-black">
                 <q-icon name="fa fa-paper-plane" class="q-mr-sm" />info@harvardcopy.com
