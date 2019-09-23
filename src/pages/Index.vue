@@ -30,7 +30,8 @@
                     fast, high quality printing,
                     call Harvard Print &
                     Copy Center!</div>
-                <h6 class="text-center">We are excited to announce as of 2019, we now have an office in Boise, Idaho!
+                <h6 class="text-center text-bold">We are excited to announce as of 2019, we now have an office in Boise,
+                    Idaho!
                     For fast, friendly service in the the Treasure Valley, give Harvard Print & Copy Center a call
                 </h6>
             </div>

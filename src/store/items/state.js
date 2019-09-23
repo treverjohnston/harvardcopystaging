@@ -95,7 +95,7 @@ export default {
   cardServices: [
     {
       name: 'Print/Copy Services',
-      icon: 'fa fa-paint-brush',
+      icon: 'fa fa-print',
       class: 'col-xs-10 col-sm-4 col-md-5 col-xl-5 bg-secondary text-white card-ind',
       link: 'services',
     },
