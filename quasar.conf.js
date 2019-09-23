@@ -5,9 +5,11 @@ module.exports = function (ctx) {
   return {
     // app boot file (/src/boot)
     // --> boot files are part of "main.js"
+
     boot: [
       'i18n',
-      'axios'
+      'axios',
+      'analytics'
     ],
 
     css: [
@@ -80,6 +82,7 @@ module.exports = function (ctx) {
 
     build: {
       scopeHoisting: true,
+      distDir: 'docs',
       // vueRouterMode: 'history',
       // vueCompiler: true,
       // gzip: true,
