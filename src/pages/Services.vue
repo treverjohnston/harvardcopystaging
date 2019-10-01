@@ -13,8 +13,8 @@
       </div>
     </div>
     <!-- DESKTOP -->
-    <div class="row justify-between header desktop-only">
-      <q-list separator class="col-md-6">
+    <div class="row justify-between desktop-only second-header">
+      <q-list separator class="col-md-4">
         <q-item clickable v-for="service in services">
           <q-item-section v-if="selected == service.id" @click="selected = service.id">
             <p :class="service.highlightClass" v-anime="{ translateX: { value: ['-30px', '0px'], duration: 4000, }}">
@@ -29,7 +29,7 @@
         </q-item>
       </q-list>
 
-      <div class="col-md-4 space-right">
+      <div class="col-md-3 space-right">
         <q-card dark bordered :class="services[selected].class">
           <q-card-section>
             <div class="text-h4 text-bold">{{services[selected].name}}</div>
@@ -43,9 +43,14 @@
             </span>
           </q-card-section>
         </q-card>
-        <q-btn to="/contact" color="info" size="lg" outline rounded no-caps class="quote-btn shadow-24 float-right">
+        <q-btn to="/contact" color="white" size="lg" outline rounded no-caps
+          class="quote-btn shadow-24 float-right gray-bg">
           Request a Quote
         </q-btn>
+      </div>
+
+      <div class="col-md-4">
+        <q-img src="../statics/various/hues.jpg" class="shadow-12 service-img" alt="color chart picture" />
       </div>
     </div>
     <!-- END DESKTOP -->
@@ -94,6 +99,10 @@
 </script>
 
 <style scoped>
+  .service-img {
+    max-height: 75vh;
+  }
+
   .quote-btn {
     margin: 2rem 0;
   }
@@ -110,14 +119,16 @@
     margin-right: 3rem;
   }
 
-  .selected {
-    color: white;
-    padding: 1rem;
-    border-radius: 15px;
-  }
-
   .service {
     font-size: 2.5rem;
+    color: black;
+  }
+
+  .selected {
+    color: white;
+    background-color: rgba(211, 211, 211, 0.671);
+    padding: 1rem;
+    border-radius: 15px;
   }
 
   .card {

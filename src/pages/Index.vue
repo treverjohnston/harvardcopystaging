@@ -25,7 +25,8 @@
                     products are
                     manufactured and shipped the same day your order is placed. Shop your order first then email us with
                     a request for quote
-                    at <a href="mailto:info@harvardcopy.com" class="phoneNumber heading">info@harvardcopy.com</a> or
+                    at <q-btn flat no-caps to="/contact" class="phoneNumber heading text-h6">{{email}}
+                    </q-btn> or
                     call us at <a href="tel:9258559998" class="phoneNumber heading">(925)
                         855-9998</a>. When you need
                     fast, high quality printing,
@@ -62,7 +63,7 @@
                     products are
                     manufactured and shipped the same day your order is placed. Shop your order first then email us with
                     a request for quote
-                    at <a href="mailto:info@harvardcopy.com" class="phoneNumber heading">info@harvardcopy.com</a> or
+                    at <q-btn to="/contact" no-caps flat class="phoneNumber heading text-body2">{{email}}</q-btn> or
                     call us at <a href="tel:9258559998" class="phoneNumber heading">(925)
                         855-9998</a>. When you need
                     fast, high quality printing,
@@ -105,7 +106,10 @@
         computed: {
             cardServices() {
                 return this.$store.state.items.cardServices;
-            }
+            },
+            email() {
+                return this.$store.state.state.email
+            },
         },
         methods: {
             push(link) {

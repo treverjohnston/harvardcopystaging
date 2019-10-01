@@ -128,9 +128,9 @@ export default {
       ],
       id: 0,
       value: 'copy',
-      class: 'bg-positive card',
-      highlightClass: 'text-bold service bg-positive selected shadow-16',
-      classMobile: 'bg-positive col-xs-10  expansion-space shadow-16'
+      class: 'card gray-bg',
+      highlightClass: 'text-bold service selected shadow-16',
+      classMobile: 'bg-info col-xs-10  expansion-space shadow-16'
     },
     {
       name: 'Direct Mail',
@@ -143,9 +143,9 @@ export default {
       ],
       id: 1,
       value: 'direct',
-      class: 'bg-accent card',
-      highlightClass: 'text-bold service bg-accent selected shadow-16',
-      classMobile: 'bg-accent col-xs-10  expansion-space shadow-16'
+      class: 'gray-bg card',
+      highlightClass: 'text-bold service gray-bg selected shadow-16',
+      classMobile: 'bg-secondary col-xs-10  expansion-space shadow-16'
     },
     {
       name: 'Office Printing',
@@ -165,9 +165,9 @@ export default {
       ],
       id: 2,
       value: 'office',
-      class: 'bg-info card',
-      highlightClass: 'text-bold service bg-info selected shadow-16',
-      classMobile: 'bg-info col-xs-10  expansion-space shadow-16'
+      class: 'gray-bg card',
+      highlightClass: 'text-bold service gray-bg selected shadow-16',
+      classMobile: 'bg-negative col-xs-10  expansion-space shadow-16'
     },
     {
       name: 'Announcements and Invitations',
@@ -183,9 +183,9 @@ export default {
       ],
       id: 3,
       value: 'announcements',
-      class: 'bg-negative card',
-      highlightClass: 'text-bold service bg-negative selected shadow-16',
-      classMobile: 'bg-negative col-xs-10  expansion-space shadow-16'
+      class: 'gray-bg card',
+      highlightClass: 'text-bold service gray-bg selected shadow-16',
+      classMobile: 'bg-accent col-xs-10  expansion-space shadow-16'
     },
     {
       name: 'Graphics Design',
@@ -199,9 +199,9 @@ export default {
       ],
       id: 4,
       value: 'graphics',
-      class: 'bg-warning card',
-      highlightClass: 'text-bold service bg-warning selected shadow-16',
-      classMobile: 'bg-warning col-xs-10  expansion-space shadow-16'
+      class: 'gray-bg card',
+      highlightClass: 'text-bold service gray-bg selected shadow-16',
+      classMobile: 'bg-positive col-xs-10  expansion-space shadow-16'
     },
     {
       name: 'Bindery',
@@ -222,9 +222,9 @@ export default {
       ],
       id: 5,
       value: 'bindery',
-      class: 'bg-secondary card',
-      highlightClass: 'text-bold service bg-secondary selected shadow-16',
-      classMobile: 'bg-secondary col-xs-10  expansion-space shadow-16'
+      class: 'gray-bg card',
+      highlightClass: 'text-bold service gray-bg selected shadow-16',
+      classMobile: 'bg-warning col-xs-10  expansion-space shadow-16'
     },
   ]
 }

@@ -24,7 +24,7 @@
               <iframe :src="boise" width="100%" height="450" frameborder="0" style="border:0;"
                 allowfullscreen=""></iframe>
             </q-card-section>
-            <q-card-section class="text-h5 text-center">Boise, Idaho Office</q-card-section>
+            <q-card-section class="text-h5 text-center">Harvard Print and Copy Center Boise, Idaho</q-card-section>
           </q-card>
           <div class="col-xs-4 self-center text-black white-background text-padding shadow-12 grow">
             <q-input v-model="name" color="teal" label="Name" name="name" type="text" class="input" ref="input"
@@ -36,15 +36,15 @@
               :rules="[val => !!val || 'Field is required']" />
             <q-input v-model="message" color="teal" type="textarea" name="message" label="Message" :max-height="100"
               class="input" :min-rows="5" ref="input" :rules="[val => !!val || 'Field is required']" />
-            <q-btn outline color="teal" @click="sendEmail" class="send-btn self-center">Send</q-btn>
+            <q-btn outline color="teal" @click="sendEmail" rounded class="send-btn self-center">Send</q-btn>
             <a href="tel:2089997994" class="phoneNumber self-center">
-              <q-btn outline color="teal" class="send-btn float-right">
+              <q-btn outline color="teal" rounded class="send-btn float-right">
                 <q-icon name="fa fa-phone" class="q-mr-sm" />
                 (208)-999-7994 - Boise
               </q-btn>
             </a>
             <a href="tel:9258559998" class="phoneNumber self-center">
-              <q-btn outline color="teal" class="send-btn float-right">
+              <q-btn outline color="teal" rounded class="send-btn float-right">
                 <q-icon name="fa fa-phone" class="q-mr-sm" />
                 (925)-855-9998 - San Ramon
               </q-btn>
@@ -56,7 +56,7 @@
               <iframe :src="cali" width="100%" height="450" frameborder="0" style="border:0;"
                 allowfullscreen=""></iframe>
             </q-card-section>
-            <q-card-section class="text-h5 text-center">San Ramon, California Office</q-card-section>
+            <q-card-section class="text-h5 text-center">Harvard Print and Copy Center San Ramon, California</q-card-section>
           </q-card>
         </div>
         <!-- END DESKTOP -->
@@ -64,42 +64,52 @@
         <div class="row wrap justify-center mobile-only text-black  mobile-margin">
           <div class="col-xs-12 q-mb-lg white-background shadow-12 text-padding"
             v-anime="{ opacity: { value: ['0', '1'], duration: 8000 } }">
-            <q-input v-model="name" color="teal" label="Name" name="name" ref="input"
-              :rules="[val => !!val || 'Field is required']" />
-            <q-input v-model="email" color="teal" label="Email" name="email" ref="input"
-              :rules="[val => !!val || 'Field is required']" />
-            <q-input v-model="phone" color="teal" label="Phone" name="phone" />
-            <q-input v-model="subject" color="teal" label="Subject" name="subject" ref="input"
-              :rules="[val => !!val || 'Field is required']" />
-            <q-input v-model="message" color="teal" type="textarea" name="message" label="Message" :max-height="100"
-              :min-rows="5" ref="input" :rules="[val => !!val || 'Field is required']" />
-            <q-btn outline color="teal" class="send-btn">Send</q-btn>
-            <a href="tel:2089997994" class="phoneNumber">
-              <q-btn outline color="teal" class="send-btn float-right">
-                <q-icon name="fa fa-phone" class="q-mr-sm" />
-                (208)-999-7994 - Boise
-              </q-btn>
-            </a>
-            <a href="tel:9258559998" class="phoneNumber">
-              <q-btn outline color="teal" class="send-btn float-right">
-                <q-icon name="fa fa-phone" class="q-mr-sm" />
-                (925)-855-9998 - San Ramon
-              </q-btn>
-            </a>
+            <div class="row">
+              <div class="col-xs-12">
+                <q-input v-model="name" color="teal" label="Name" name="name" ref="input"
+                  :rules="[val => !!val || 'Field is required']" />
+                <q-input v-model="email" color="teal" label="Email" name="email" ref="input"
+                  :rules="[val => !!val || 'Field is required']" />
+                <q-input v-model="phone" color="teal" label="Phone" name="phone" />
+                <q-input v-model="subject" color="teal" label="Subject" name="subject" ref="input"
+                  :rules="[val => !!val || 'Field is required']" />
+                <q-input v-model="message" color="teal" type="textarea" name="message" label="Message" :max-height="100"
+                  :min-rows="5" ref="input" :rules="[val => !!val || 'Field is required']" />
+              </div>
+              <div class="col-xs-12">
+                <q-btn outline color="teal" rounded class="send-btn">Send</q-btn>
+              </div>
+              <div class="col-xs-12">
+                <a href="tel:2089997994" class="phoneNumber">
+                  <q-btn outline color="teal" rounded no-caps class="send-btn">
+                    <q-icon name="fa fa-phone" class="q-mr-sm" />
+                    (208)-999-7994 - Boise
+                  </q-btn>
+                </a>
+              </div>
+              <div class="col-xs-12">
+                <a href="tel:9258559998" class="phoneNumber">
+                  <q-btn outline color="teal" rounded no-caps class="send-btn">
+                    <q-icon name="fa fa-phone" class="q-mr-sm" />
+                    (925)-855-9998 - San Ramon
+                  </q-btn>
+                </a>
+              </div>
+            </div>
           </div>
           <q-card class="col-xs-12 q-mt-xl shadow-12">
             <q-card-section>
               <iframe :src="boise" width="100%" height="450" frameborder="0" style="border:0;"
                 allowfullscreen=""></iframe>
             </q-card-section>
-            <q-card-section class="text-h5 text-center">Boise, Idaho Office</q-card-section>
+            <q-card-section class="text-h5 text-center">Harvard Print and Copy Center Boise, Idaho</q-card-section>
           </q-card>
           <q-card class="col-xs-12 q-mt-xl shadow-12">
             <q-card-section>
               <iframe :src="cali" width="100%" height="450" frameborder="0" style="border:0;"
                 allowfullscreen=""></iframe>
             </q-card-section>
-            <q-card-section class="text-h5 text-center">San Ramon, California Office</q-card-section>
+            <q-card-section class="text-h5 text-center">Harvard Print and Copy Center San Ramon, California</q-card-section>
           </q-card>
         </div>
         <!-- END MOBILE -->

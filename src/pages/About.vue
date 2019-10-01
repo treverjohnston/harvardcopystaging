@@ -14,8 +14,8 @@
                 <q-img src="../statics/office.png" alt="Harvard Print and Copy office" class="shadow-24"></q-img>
             </div>
         </div> -->
-        <div class="row justify-center second-header">
-            <div class="col-sm-10 col-md-8 text-justify text-padding shadow-12 white-background"
+        <div class="row justify-between second-header">
+            <div class="col-sm-10 col-md-6 text-justify text-padding shadow-12 white-background"
                 v-anime="{opacity: { value: ['0', '1'], duration: 500,delay:300 }, translateY: { value: ['100px', '-125px'], duration: 1000},  easing: 'linear' }">
                 <h6 class="text-weight-regular desktop-only">
                     Harvard Print and Copy Center is a family owned business which provides Printing, Graphics
@@ -87,6 +87,9 @@
                     class="quote-btn shadow-12 float-right mobile-only">
                     Request a Quote
                 </q-btn>
+            </div>
+            <div class="col-md-5 desktop-only">
+                <q-img src="../statics/various/post_small.jpeg" class="shadow-12" alt="stack of mail" />
             </div>
         </div>
     </q-page>

@@ -1,5 +1,5 @@
 <template>
-  <q-layout view="lHh Lpr fff" class="background">
+  <q-layout view="lHh Lpr fff" :class="">
     <q-header elevated>
       <q-toolbar class="toolbar">
         <div class="mobile-only text-black">
@@ -42,7 +42,7 @@
       </q-list>
     </q-drawer>
 
-    <q-page-container>
+    <q-page-container :class="backgroundClass">
       <router-view />
     </q-page-container>
 
@@ -56,7 +56,7 @@
             <a href="tel:9258559998" class="phoneNumber heading">
               <q-btn flat icon="fa fa-phone"><span class="q-ml-xs text-h5">(925)-855-9998</span></q-btn>
             </a>
-            <div class="text-subtitle2"><a :href="cali" target="_blank" rel="noopener" class="phoneNumber">
+            <div class="text-subtitle2"><a :href="cali" target="_blank" rel="noopener" class="phoneNumber heading">
                 <q-btn flat no-caps icon="fa fa-compass"><span class="q-ml-xs">View on map</span></q-btn>
               </a></div>
             <div class="text-h5 q-mt-md">Boise Office:</div>
@@ -65,7 +65,7 @@
             <a href="tel:2089997994" class="phoneNumber heading">
               <q-btn flat icon="fa fa-phone"><span class="q-ml-xs text-h5">(208)-999-7994</span></q-btn>
             </a>
-            <div class="text-subtitle2"><a :href="boise" target="_blank" rel="noopener" class="phoneNumber">
+            <div class="text-subtitle2"><a :href="boise" target="_blank" rel="noopener" class="phoneNumber heading">
                 <q-btn flat no-caps icon="fa fa-compass"><span class="q-ml-xs">View on map</span></q-btn>
               </a></div>
 
@@ -75,9 +75,8 @@
           </div>
           <div class="col-md-4 self-center text-center q-mt-xl q-mb-xl">
             <div class="text-h5 q-mt-md text-black">
-              <a href="mailto:info@harvardcopy.com" class="phoneNumber text-black">
-                <q-icon name="fa fa-paper-plane" class="q-mr-sm" /> info@harvardcopy.com
-              </a>
+              <q-btn to="/contact" icon="fa fa-paper-plane" class="heading" color="" no-caps flat>
+                <span class="q-ml-sm text-h5"> {{email}}</span></q-btn>
             </div>
             <q-btn class="q-mt-sm self-center" @click="openURL('https://www.facebook.com/HARVARDCOPY')"
               aria-label="Facebook Link" flat>
@@ -109,7 +108,7 @@
             <a href="tel:9258559998" class="phoneNumber heading text-subtitle1">
               <q-btn flat no-caps icon="fa fa-phone"><span class="q-ml-xs">(925)-855-9998</span></q-btn>
             </a>
-            <div class="text-subtitle2"><a :href="cali" target="_blank" rel="noopener" class="phoneNumber">
+            <div class="text-subtitle2"><a :href="cali" target="_blank" rel="noopener" class="phoneNumber heading">
                 <q-btn flat no-caps icon="fa fa-compass"><span class="q-ml-xs">View on map</span></q-btn>
               </a></div>
             <div class="text-h5 q-mt-md">Boise Office:</div>
@@ -118,7 +117,7 @@
             <a href="tel:2089997994" class="phoneNumber heading text-subtitle1">
               <q-btn flat no-caps icon="fa fa-phone"><span class="q-ml-xs">(208)-999-7994</span></q-btn>
             </a>
-            <div class="text-subtitle2"><a :href="boise" target="_blank" class="phoneNumber" rel="noopener">
+            <div class="text-subtitle2"><a :href="boise" target="_blank" class="phoneNumber heading" rel="noopener">
                 <q-btn flat no-caps icon="fa fa-compass"><span class="q-ml-xs">View on map</span></q-btn>
               </a></div>
 
@@ -134,9 +133,8 @@
                 frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
             </q-btn>
             <div class="text-h5 q-mt-sm">
-              <a href="mailto:info@harvardcopy.com" class="phoneNumber text-black">
-                <q-icon name="fa fa-paper-plane" class="q-mr-sm" />info@harvardcopy.com
-              </a>
+              <q-btn to="/contact" icon="fa fa-paper-plane" color="" flat no-caps class="heading">
+                <span class="text-h5 q-ml-sm">{{email}}</span></q-btn>
             </div>
             <div class="text-subtitle2 q-mt-lg">&copy;{{year}} Harvard Print and Copy Center</div>
             <div class="text-subtitle2">All rights reserved</div>
@@ -161,6 +159,7 @@
     data() {
       return {
         tabModel: '/',
+        backgroundClass: 'background',
         leftDrawerOpen: false,
         boise: 'https://www.google.com/maps/place/11700+W+Carmichael+St,+Boise,+ID+83709/@43.5429106,-116.3317988,17z',
         cali: 'https://www.google.com/maps/place/2010+Crow+Canyon+Pl+%2523100,+San+Ramon,+CA+94583/@37.779354,-121.973807,16z'
@@ -173,12 +172,18 @@
       companyName() {
         return this.$store.state.state.companyName
       },
+      email() {
+        return this.$store.state.state.email
+      },
       year() {
         var y = new Date;
         return y.getFullYear();
       }
     },
     mounted() {
+      if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+        this.backgroundClass = 'backgroundMobile';
+      }
     },
     methods: {
       openURL,
