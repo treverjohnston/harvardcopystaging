@@ -7,7 +7,11 @@
             </div>
         </div>
         <div class="row justify-center second-header text-center header-padding desktop-only">
-            <div class="col-xs-10 col-sm-9 col-md-8 text-justify white-background text-padding shadow-12"
+            <div class="col-sm-10 col-md-5 heading text-padding self-center"
+                v-anime="{opacity: { value: ['0', '1'], duration: 500,delay:300 }, translateY: { value: ['100px', '-125px'], duration: 1000},  easing: 'linear', delay:100 }">
+                <q-img src="../statics/various/bindery.jpeg" class="shadow-12" alt="stock photo" />
+            </div>
+            <div class="col-xs-10 col-sm-9 col-md-6 text-justify white-background text-padding shadow-12 self-center"
                 v-anime="{opacity: { value: ['0', '1'], duration: 500,delay:300 }, translateY: { value: ['100px', '-125px'], duration: 1000},  easing: 'linear', delay:100 }">
                 <div class="text-h6 text-weight-regular paragraph-ind">Harvard Print & Copy Center is a full service
                     printing and copying
