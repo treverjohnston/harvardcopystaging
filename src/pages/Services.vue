@@ -56,8 +56,8 @@
     <!-- END DESKTOP -->
 
     <!-- MOBILE -->
-    <div class="row justify-center second-header mobile-only">
-      <div v-anime="{ translateY: { value: ['-30px', '0px'], duration: 4000 } }" class="col-xs-11">
+    <div class="row justify-center second-header mobile-only q-gutter-xs">
+      <div v-anime="{ translateY: { value: ['-30px', '0px'], duration: 4000 } }" class="col-xs-11 self-center">
         <q-list bordered :class="service.classMobile" v-for="service in services">
           <q-expansion-item expand-separator :label="service.name" class="text-white" expand-icon-class="text-white">
             <q-card>
@@ -67,6 +67,9 @@
             </q-card>
           </q-expansion-item>
         </q-list>
+      </div>
+      <div class="col-xs-10 self-center">
+        <q-img src="../statics/various/line.jpeg" class="shadow-12 service-img" alt="color chart picture" />
       </div>
       <q-btn to="/contact" color="white" size="lg" outline rounded no-caps class="quote-btn shadow-24 col-xs-8">Request
         a

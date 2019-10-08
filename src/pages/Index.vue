@@ -36,7 +36,8 @@
                     fast, high quality printing,
                     call Harvard Print &
                     Copy Center!</div>
-                <h6 class="text-center text-bold">We are excited to announce as of 2019, we now have an office in Boise,
+                <h6 class="text-center text-bold" v-scroll-fire="fadeInImage">We are excited to announce as of 2019, we
+                    now have an office in Boise,
                     Idaho!
                     For fast, friendly service in the the Treasure Valley, give Harvard Print & Copy Center a call!
                 </h6>
@@ -61,6 +62,10 @@
                     courteous same day service,
                     prompt in house bindery and fulfillment (direct mail) as well.
                 </div>
+                <div class="col-xs-12 heading text-padding self-center"
+                    v-anime="{opacity: { value: ['0', '1'], duration: 500,delay:300 }, translateY: { value: ['-100px', '0px'], duration: 1000},  easing: 'linear', delay:100 }">
+                    <q-img src="../statics/various/bindery.jpeg" class="shadow-12" alt="stock photo" />
+                </div>
                 <div class="text-body2 paragraph-ind">
                     We welcome small and large orders and offer great quality print products at reasonable prices.
                     Most
@@ -73,15 +78,16 @@
                     fast, high quality printing,
                     call Harvard Print &
                     Copy Center!</div>
-                <div class="text-body2 text-center text-bold">We are excited to announce as of 2019, we now have an
+                <div class="text-body2 text-center text-bold" v-scroll-fire="fadeInImage">We are excited to announce as
+                    of 2019, we now have an
                     office in Boise, Idaho!
                     For fast, friendly service in the the Treasure Valley, give Harvard Print & Copy Center a call!
                 </div>
             </div>
         </div>
-        <!--  -->
+        <!-- END MOBILE  -->
         <div class="row justify-center header text-center">
-            <q-card @click.native="push(card.link)" v-for="card in cardServices" :class="card.class"
+            <q-card @click.native="push(card.link)" :id="card.link" v-for="card in cardServices" :class="card.class"
                 v-anime="{ translateY: {value: ['0px', '-150px'], duration: 4000, }}">
                 <q-card-section>
                     <div class="text-h6">{{card.name}}</div>
@@ -118,6 +124,12 @@
         methods: {
             push(link) {
                 this.$router.push(link)
+            },
+            fadeInImage() {
+                this.cardServices.forEach(card => {
+                    var el = document.getElementById(card.link)
+                    el.classList.add('loaded')
+                });
             }
         }
     }

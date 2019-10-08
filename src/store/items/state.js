@@ -1,5 +1,14 @@
 export default {
   reviews: [
+
+    {
+      name: 'Leticia M.',
+      review: 'Incredible service and beautiful quality!  I contacted Harvard Print in a pinch. I usually go to larger printing companies for my small print projects so this is my first experience with Harvard. I needed to get high quality printing for a wedding program I created and the companies I have used did not produce acceptable proofs for such an important print project. I was in a panic only having a few days to get this project completed and contacted Harvard based on the favorable reviews on Yelp. I am so happy that I did! Marc was extremely helpful from start to finish. He reviewed my document and gave me a quick quote that came in significantly less than the other places I tried first (not to mention his quote included cutting to size, scoring and folding the cardstock). Marc printed a proof to review and I was beyond impressed with both the cardstock and print quality.  I immediately approved the proof and Marc quickly completed the project knowing I was on a tight timeline. He called me as soon as the print job was complete and offered to deliver it to me if I couldn\'t make it by close to pick it up....what service!  I would highly recommend Marc and Harvard Print!',
+      rating: 5,
+      reviewer: 'Leticia M.',
+      id: 7,
+      link: 'https://www.yelp.com/biz/harvard-print-and-copy-center-san-ramon?hrid=4s0VSgiU6BuODnxv6Z44Aw&utm_campaign=www_review_share_popup&utm_medium=copy_link&utm_source=(direct)'
+    },
     {
       name: 'Sara F.',
       review: 'These guys did a terrific job for me. Helped with final design, worked to get me the best pricing and then delivered the final product ahead of schedule. I\'ll definitely be calling them next time I need printing work done.',
@@ -56,14 +65,6 @@ export default {
       id: 6,
       link: 'https://www.yelp.com/biz/harvard-print-and-copy-center-san-ramon?hrid=Gz-evq1PtYhTwH8XbWvBlQ&utm_campaign=www_review_share_popup&utm_medium=copy_link&utm_source=(direct)'
     },
-    {
-      name: 'Leticia M.',
-      review: 'Incredible service and beautiful quality!  I contacted Harvard Print in a pinch. I usually go to larger printing companies for my small print projects so this is my first experience with Harvard. I needed to get high quality printing for a wedding program I created and the companies I have used did not produce acceptable proofs for such an important print project. I was in a panic only having a few days to get this project completed and contacted Harvard based on the favorable reviews on Yelp. I am so happy that I did! Marc was extremely helpful from start to finish. He reviewed my document and gave me a quick quote that came in significantly less than the other places I tried first (not to mention his quote included cutting to size, scoring and folding the cardstock). Marc printed a proof to review and I was beyond impressed with both the cardstock and print quality.  I immediately approved the proof and Marc quickly completed the project knowing I was on a tight timeline. He called me as soon as the print job was complete and offered to deliver it to me if I couldn\'t make it by close to pick it up....what service!  I would highly recommend Marc and Harvard Print!',
-      rating: 5,
-      reviewer: 'Leticia M.',
-      id: 7,
-      link: 'https://www.yelp.com/biz/harvard-print-and-copy-center-san-ramon?hrid=4s0VSgiU6BuODnxv6Z44Aw&utm_campaign=www_review_share_popup&utm_medium=copy_link&utm_source=(direct)'
-    },
   ],
   litigationServices: [
     {
@@ -96,25 +97,25 @@ export default {
     {
       name: 'Print/Copy Services',
       icon: 'fa fa-print',
-      class: 'col-xs-10 col-sm-4 col-md-5 col-xl-5 bg-secondary text-white card-ind',
+      class: 'col-xs-10 col-sm-4 col-md-5 col-xl-5 bg-secondary text-white card-ind not-loaded',
       link: 'services',
     },
     {
       name: 'Litigation Services',
       icon: 'fa fa-file-invoice',
-      class: 'col-xs-10 col-sm-4 col-md-5 col-lg-4 col-xl-5 text-white card-ind bg-accent',
+      class: 'col-xs-10 col-sm-4 col-md-5 col-lg-4 col-xl-5 text-white card-ind bg-accent not-loaded',
       link: 'litigation',
     },
     {
       name: 'About',
       icon: 'fa fa-users',
-      class: 'col-xs-10 col-sm-4 col-md-5 col-lg-4 col-xl-5 text-white card-ind bg-info',
+      class: 'col-xs-10 col-sm-4 col-md-5 col-lg-4 col-xl-5 text-white card-ind bg-info not-loaded',
       link: 'about',
     },
     {
       name: 'Contact/Request A Quote',
       icon: 'fa fa-paper-plane',
-      class: 'col-xs-10 col-sm-4 col-md-5 col-lg-4 col-xl-5 text-white card-ind bg-warning',
+      class: 'col-xs-10 col-sm-4 col-md-5 col-lg-4 col-xl-5 text-white card-ind bg-warning not-loaded',
       link: 'contact',
     }
 

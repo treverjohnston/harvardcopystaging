@@ -19,11 +19,10 @@
         <!-- DESKTOP -->
         <div class="row justify-between desktop-only q-gutter-sm"
           v-anime="{ translateY: { value: ['0px', '-150px'], duration: 2500, } }">
-          <div class="col-xs-5 self-center">
-            <q-img src="../statics/various/review_small.jpeg" class="shadow-12"
-              alt="people looking at colors and designs" />
+          <div class="col-xs-3 self-center">
+            <q-img src="../statics/various/contact.jpeg" class="shadow-12" alt="stock photo" />
           </div>
-          <div class="col-xs-6 self-center text-black white-background text-padding shadow-12 grow">
+          <div class="col-xs-8 self-center text-black white-background text-padding shadow-12 grow">
             <q-input v-model="name" color="teal" label="Name" name="name" type="text" class="input" ref="input"
               :rules="[val => !!val || 'Field is required']" />
             <q-input v-model="email" color="teal" label="Email" name="email" type="email" class="input" ref="input"
@@ -110,6 +109,9 @@
             </q-card-section>
             <q-card-section class="text-h5 text-center">Harvard Print and Copy Center Boise, Idaho</q-card-section>
           </q-card>
+          <div class="col-xs-10 q-mt-xl">
+            <q-img src="../statics/various/contact.jpeg" class="shadow-12" alt="stock photo" />
+          </div>
           <q-card class="col-xs-12 q-mt-xl shadow-12">
             <q-card-section>
               <iframe :src="cali" width="100%" height="450" frameborder="0" style="border:0;"

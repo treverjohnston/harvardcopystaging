@@ -12,7 +12,7 @@
 
     <!-- DESKTOP -->
     <div class="row justify-between second-header text-center desktop-only">
-      <div class="col-xs-12 col-sm-12 col-md-5 heading"
+      <div class="col-xs-12 col-sm-12 col-md-5 heading self-center"
         v-anime="{opacity: { value: ['0', '1'], duration: 5000 }, translateY: { value: ['100px', '-125px'], duration: 2500, } }">
         <div class="row justify-center q-gutter-xl">
           <q-carousel animated v-model="slide" navigation infinite control-color="black" height="70vh"
@@ -41,7 +41,7 @@
           </q-carousel>
         </div>
       </div>
-      <div class="col-md-5"
+      <div class="col-md-5 self-center"
         v-anime="{opacity: { value: ['0', '1'], duration: 5000 }, translateY: { value: ['100px', '-125px'], duration: 2500, } }">
         <q-img src="../statics/various/review_small.jpeg" class="shadow-12"
           alt="people looking at colors and designs" />
@@ -49,11 +49,17 @@
     </div>
     <!-- DESKTOP -->
     <!-- MOBILE -->
+
     <div class="row justify-center second-header text-center mobile-only">
-      <div class="col-xs-12 col-sm-12 col-md-12 heading">
+      <div class="col-xs-12 heading">
         <div class="row justify-center q-gutter-xl"
           v-anime="{opacity: { value: ['0', '1'], duration: 5000 }, translateY: { value: ['100px', '-125px'], duration: 2500, } }">
-          <q-card v-for="review in reviews" :name="review.id" class="col-xs-12 col-sm-8 col-md-3">
+
+          <div class="col-xs-10 self-center">
+            <q-img src="../statics/various/review_small.jpeg" class="shadow-12" alt="stock photo" />
+          </div>
+
+          <q-card v-for="review in reviews" :name="review.id" class="col-xs-11 col-sm-8 col-md-3">
             <q-card-section class="q-mt-md text-center text-black text-body1 review-text desktop-only">
               {{review.review}}
             </q-card-section>
@@ -90,7 +96,7 @@
     name: 'Reviews',
     data() {
       return {
-        slide: 0,
+        slide: 7,
         ratingModel: 5
       }
     },
