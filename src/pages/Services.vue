@@ -29,7 +29,7 @@
         </q-item>
       </q-list>
 
-      <div class="col-md-3 space-right">
+      <div class="col-sm-6 col-md-4 col-lg-3 space-right">
         <q-card dark bordered :class="services[selected].class">
           <q-card-section>
             <div class="text-h4 text-bold">{{services[selected].name}}</div>
@@ -49,8 +49,8 @@
         </q-btn>
       </div>
 
-      <div class="col-md-4">
-        <q-img src="../statics/various/hues.jpg" class="shadow-12 service-img" alt="color chart picture" />
+      <div class="col-sm-4 col-md-3 col-lg-4">
+        <q-img src="../statics/various/hues.jpg" class="shadow-12 service-img " alt="color chart picture" />
       </div>
     </div>
     <!-- END DESKTOP -->

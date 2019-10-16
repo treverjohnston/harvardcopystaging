@@ -1,3 +1,6 @@
+body{
+   font-family: 'Fira Sans', sans-serif;
+ }
  .phoneNumber {
     text-decoration: none;
     color: teal;
@@ -27,7 +30,16 @@
 
   .white-background {
     background-color: white;
+    z-index: 5;
   }
+  .border-background{
+    border: 3px solid #31CCEC;
+    border-radius:15px;
+  }
+  .home-border{
+    border: 3px solid #31CCEC;
+    border-radius:15px;
+    }
 
   .second-header {
     background-color: rgba(49, 205, 236, 0.65);
@@ -41,6 +53,10 @@
 
   .header-padding {
     padding: 0rem 0rem 10rem 0rem;
+  }
+
+  .home-header{
+    padding:0rem;
   }
 
   .toolbar {
@@ -61,11 +77,11 @@
   }
 
 .gray-bg{
-  background-color: rgba(211, 211, 211, 0.671);
+  background-color: rgba(211, 211, 211, 0.9);
   }
 
   .background {
-    background: url(../statics/backgrounds/background.jpeg) no-repeat center center fixed;
+    background: url(../statics/backgrounds/meeting.jpg) no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -75,7 +91,7 @@
     /* background-color: gray; */
   }
   .backgroundMobile {
-    background: url(../statics/backgrounds/backgroundHorizontal.jpeg) no-repeat;
+    background: url(../statics/backgrounds/meeting.jpg) no-repeat;
 
 
   background-position: top center; 
@@ -104,6 +120,17 @@
   }
 
   .grow:hover .hidden-text {
+    opacity: 1;
+  }
+  .grow-small {
+    transition: all .35s ease-in-out;
+  }
+
+  .grow-small:hover {
+    transform: scale(1.05);
+  }
+
+  .grow-small:hover .hidden-text {
     opacity: 1;
   }
 
@@ -135,3 +162,16 @@
     .paragraph-ind {
         padding: 1rem 0;
     }
+    .custom-caption{
+      text-align: center;
+      padding: 2rem;
+      color: white;
+      background-color: rgba(0, 0, 0, .4);
+      height: 25vh;
+      }
+    .custom-caption-mobile{
+      text-align: center;
+      padding: 2rem;
+      color: white;
+      background-color: rgba(0, 0, 0, .5);
+      }

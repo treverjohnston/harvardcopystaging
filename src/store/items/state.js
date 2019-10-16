@@ -97,25 +97,25 @@ export default {
     {
       name: 'Print/Copy Services',
       icon: 'fa fa-print',
-      class: 'col-xs-10 col-sm-4 col-md-5 col-xl-5 bg-secondary text-white card-ind not-loaded',
+      class: 'col-xs-10 col-sm-4 col-md-5 col-lg-4 col-xl-2 bg-secondary text-white card-ind not-loaded',
       link: 'services',
     },
     {
       name: 'Litigation Services',
       icon: 'fa fa-file-invoice',
-      class: 'col-xs-10 col-sm-4 col-md-5 col-lg-4 col-xl-5 text-white card-ind bg-accent not-loaded',
+      class: 'col-xs-10 col-sm-4 col-md-5 col-lg-4 col-xl-2 text-white card-ind bg-accent not-loaded',
       link: 'litigation',
     },
     {
       name: 'About',
       icon: 'fa fa-users',
-      class: 'col-xs-10 col-sm-4 col-md-5 col-lg-4 col-xl-5 text-white card-ind bg-info not-loaded',
+      class: 'col-xs-10 col-sm-4 col-md-5 col-lg-4 col-xl-2 text-white card-ind bg-info not-loaded',
       link: 'about',
     },
     {
       name: 'Contact/Request A Quote',
       icon: 'fa fa-paper-plane',
-      class: 'col-xs-10 col-sm-4 col-md-5 col-lg-4 col-xl-5 text-white card-ind bg-warning not-loaded',
+      class: 'col-xs-10 col-sm-4 col-md-5 col-lg-4 col-xl-2 text-white card-ind bg-warning not-loaded',
       link: 'contact',
     }
 
@@ -134,13 +134,13 @@ export default {
       classMobile: 'bg-info col-xs-10  expansion-space shadow-16'
     },
     {
-      name: 'Direct Mail',
+      name: 'Direct Mail/EDDM',
       subservices: [
         'Postal Metering',
         'Folding Direct Mail',
         'Envelope Printing',
         'Labeling and Ink-Jetting',
-        'Every Door Direct Mail Printing and Bundling'
+        'Every Door Direct Mail Printing (EDDM) and Bundling'
       ],
       id: 1,
       value: 'direct',
@@ -149,7 +149,7 @@ export default {
       classMobile: 'bg-secondary col-xs-10  expansion-space shadow-16'
     },
     {
-      name: 'Office Printing',
+      name: 'Printing Services',
       subservices: [
         'Business Cards',
         'Letterhead',
@@ -227,5 +227,56 @@ export default {
       highlightClass: 'text-bold service gray-bg selected shadow-16',
       classMobile: 'bg-warning col-xs-10  expansion-space shadow-16'
     },
+  ],
+  slides: [
+    {
+      name: 'business people stock photo',
+      title: 'Welcome to Harvard Print and Copy Center',
+      src: '../statics/slideshow/business.jpeg',
+      id: 0
+    },
+    {
+      name: 'printing press stock photo',
+      title: 'Printing Services',
+      src: '../statics/slideshow/press.jpg',
+      id: 1
+    },
+    {
+      name: 'stack of copies',
+      title: 'Copy Services',
+      src: '../statics/slideshow/bindery_banner.jpeg',
+      id: 2
+    },
+    {
+      name: 'mail truck',
+      title: 'Direct Mail/EDDM',
+      src: '../statics/slideshow/mail.jpg',
+      id: 3
+    },
+    {
+      name: 'binders stock photo',
+      title: 'Litigation Services',
+      src: '../statics/slideshow/binders.jpg',
+      id: 4
+    },
+    {
+      name: 'stack of mailers',
+      title: 'Announcements and Invitations',
+      src: '../statics/various/post_small.jpeg',
+      id: 5
+    },
+    {
+      name: 'bindery stock photo',
+      title: 'Bindery',
+      src: '../statics/slideshow/coil.jpg',
+      id: 6
+    },
+    {
+      name: 'blank',
+      title: 'And More!',
+      src: '',
+      id: 7
+    },
+
   ]
 }

@@ -10,7 +10,7 @@
       </div>
     </div>
     <div class="row justify-center second-header header-padding">
-      <div class="col-xs-10 col-sm-8 col-md-8 white-background shadow-12 text-padding"
+      <div class="col-xs-10 col-sm-8 col-md-8 white-background shadow-12 text-padding border-background"
         v-anime="{opacity: { value: ['0', '1'], duration: 500,delay:300 }, translateY: { value: ['100px', '-125px'], duration: 1000},  easing: 'linear' }">
         <h6 class="text-weight-regular desktop-only">Harvard Litigation Services offers litigation support services to
           the SF bay area community for over {{years}} years. <b class="heading">We are now servicing the Boise, Idaho

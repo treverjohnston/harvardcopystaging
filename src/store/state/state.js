@@ -1,4 +1,4 @@
 export default {
   companyName: "Harvard Copy",
-  email: 'HarvardCopy@gmail.com'
+  email: 'Wish@HarvardCopy.com'
 }

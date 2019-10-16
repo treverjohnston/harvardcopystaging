@@ -15,7 +15,7 @@
             </div>
         </div> -->
         <div class="row justify-between second-header">
-            <div class="col-sm-10 col-md-6 text-justify text-padding shadow-12 white-background"
+            <div class="col-sm-10 col-md-6 text-justify text-padding shadow-12 white-background border-background"
                 v-anime="{opacity: { value: ['0', '1'], duration: 500,delay:300 }, translateY: { value: ['100px', '-125px'], duration: 1000},  easing: 'linear' }">
                 <h6 class="text-weight-regular desktop-only">
                     Harvard Print and Copy Center is a family owned business which provides Printing, Graphics
@@ -40,7 +40,7 @@
                 <h6 class="text-weight-bold desktop-only">
                     In 2019, we opened up a new branch in Boise, Idaho. Located at 11700 W Carmichael St., Boise, In the
                     Treasure Valley,
-                    please give us a call at 208-999-7994 or email us at Info@Harvardcopy.com.
+                    please give us a call at 208-999-7994 or email us at {{email}}.
                 </h6>
                 <h6 class="text-weight-bold desktop-only">
                     We offer FREE Delivery and Pickup. We are very competitive in our pricing, we take courtesy
@@ -72,7 +72,7 @@
                 <div class="text-body2 text-weight-bold mobile-only">
                     In 2019, we opened up a new branch in Boise, Idaho. Located at 11700 W Carmichael St., Boise, In the
                     Treasure Valley,
-                    please give us a call at 208-999-7994 or email us at Info@Harvardcopy.com.
+                    please give us a call at 208-999-7994 or email us at {{email}}.
                 </div>
                 <div class="text-body2 text-weight-bold mobile-only">
                     We offer FREE Delivery and Pickup. We are very competitive in our pricing, we take courtesy
@@ -103,6 +103,9 @@
             }
         },
         computed: {
+            email() {
+                return this.$store.state.state.email
+            }
         },
         mounted() {
         },

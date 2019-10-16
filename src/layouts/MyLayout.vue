@@ -54,7 +54,7 @@
             <div class="text-subtitle2">2010 Crow Canyon Place, Suite 100</div>
             <div class="text-subtitle2">San Ramon, CA 94583</div>
             <a href="tel:9258559998" class="phoneNumber heading">
-              <q-btn flat icon="fa fa-phone"><span class="q-ml-xs text-h5">(925)-855-9998</span></q-btn>
+              <q-btn flat icon="fa fa-phone"><span class="q-ml-xs text-h5">(925) 855-9998</span></q-btn>
             </a>
             <div class="text-subtitle2"><a :href="cali" target="_blank" rel="noopener" class="phoneNumber heading">
                 <q-btn flat no-caps icon="fa fa-compass"><span class="q-ml-xs">View on map</span></q-btn>
@@ -63,7 +63,7 @@
             <div class="text-subtitle2 ">11700 W Carmichael St</div>
             <div class="text-subtitle2 ">Boise, ID 83709</div>
             <a href="tel:2089997994" class="phoneNumber heading">
-              <q-btn flat icon="fa fa-phone"><span class="q-ml-xs text-h5">(208)-999-7994</span></q-btn>
+              <q-btn flat icon="fa fa-phone"><span class="q-ml-xs text-h5">(208) 999-7994</span></q-btn>
             </a>
             <div class="text-subtitle2"><a :href="boise" target="_blank" rel="noopener" class="phoneNumber heading">
                 <q-btn flat no-caps icon="fa fa-compass"><span class="q-ml-xs">View on map</span></q-btn>
@@ -106,7 +106,7 @@
             <div class="text-subtitle2">2010 Crow Canyon Place, Suite 100</div>
             <div class="text-subtitle2">San Ramon, CA 94583</div>
             <a href="tel:9258559998" class="phoneNumber heading text-subtitle1">
-              <q-btn flat no-caps icon="fa fa-phone"><span class="q-ml-xs">(925)-855-9998</span></q-btn>
+              <q-btn flat no-caps icon="fa fa-phone"><span class="q-ml-xs">(925) 855-9998</span></q-btn>
             </a>
             <div class="text-subtitle2"><a :href="cali" target="_blank" rel="noopener" class="phoneNumber heading">
                 <q-btn flat no-caps icon="fa fa-compass"><span class="q-ml-xs">View on map</span></q-btn>
@@ -115,7 +115,7 @@
             <div class="text-subtitle2 ">11700 W Carmichael St</div>
             <div class="text-subtitle2 ">Boise, ID 83709</div>
             <a href="tel:2089997994" class="phoneNumber heading text-subtitle1">
-              <q-btn flat no-caps icon="fa fa-phone"><span class="q-ml-xs">(208)-999-7994</span></q-btn>
+              <q-btn flat no-caps icon="fa fa-phone"><span class="q-ml-xs">(208) 999-7994</span></q-btn>
             </a>
             <div class="text-subtitle2"><a :href="boise" target="_blank" class="phoneNumber heading" rel="noopener">
                 <q-btn flat no-caps icon="fa fa-compass"><span class="q-ml-xs">View on map</span></q-btn>

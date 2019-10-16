@@ -1,18 +1,31 @@
 <template>
     <q-page>
         <!-- DESKTOP -->
-        <div class="row justify-center header text-center header-padding desktop-only">
-            <div class="col-sm-10 col-md-12 heading text-padding">
-                <h1 class="">Welcome to Harvard Print and Copy Center</h1>
+        <div class="row justify-center header text-center home-header desktop-only">
+            <div class="col-xs-12">
+                <q-carousel infinite animated arrows :autoplay="6000" v-model="slideModel" height="60vh">
+                    <q-carousel-slide v-for="slide in slides" :name="slide.id" class="" :img-src="slide.src"
+                        :alt="slide.name">
+                        <div class="custom-caption">
+                            <span class="text-h1">{{slide.title}}</span>
+                            <!-- <h1 class=""> Harvard Print and Copy Center</h1> -->
+                        </div>
+                        <div v-if="slide.id != 0" class="custom-caption">
+                            <q-btn v-if="slide.title != 'Litigation Services'" size="xl" class="" rounded color="info"
+                                no-caps to="/services">Learn
+                                More
+                            </q-btn>
+                            <q-btn v-else size="xl" class="" rounded color="info" no-caps to="/litigation">Learn
+                                More
+                            </q-btn>
+                        </div>
+                    </q-carousel-slide>
+                </q-carousel>
             </div>
         </div>
-        <div class="row justify-center second-header text-center header-padding desktop-only">
-            <div class="col-sm-10 col-md-5 heading text-padding self-center"
-                v-anime="{opacity: { value: ['0', '1'], duration: 500,delay:300 }, translateY: { value: ['100px', '-125px'], duration: 1000},  easing: 'linear', delay:100 }">
-                <q-img src="../statics/various/bindery.jpeg" class="shadow-12" alt="stock photo" />
-            </div>
-            <div class="col-xs-10 col-sm-9 col-md-6 text-justify white-background text-padding shadow-12 self-center"
-                v-anime="{opacity: { value: ['0', '1'], duration: 500,delay:300 }, translateY: { value: ['100px', '-125px'], duration: 1000},  easing: 'linear', delay:100 }">
+        <div class="row justify-center second-header text-center header-padding desktop-only q-gutter-md">
+            <div class="col-xs-10 col-sm-9 col-md-8 text-justify white-background text-padding shadow-12 self-center home-border"
+                v-anime="{opacity: { value: ['0', '1'], duration: 500,delay:300 }, translateY: { value: ['100px', '-75px'], duration: 1000},  easing: 'linear', delay:100 }">
                 <div class="text-h6 text-weight-regular paragraph-ind">Harvard Print & Copy Center is a full service
                     printing and copying
                     copmany, with
@@ -45,13 +58,30 @@
         </div>
         <!--  -->
         <!-- MOBILE -->
-        <div class="row justify-center header text-center mobile-only">
-            <div class="col-sm-10 col-md-12 heading text-padding">
-                <h4 class="">Welcome to Harvard Print and Copy Center</h4>
+        <div class="row justify-center text-center mobile-only">
+            <div class="col-xs-12">
+                <q-carousel infinite arrows animated :autoplay="6000" v-model="slideModel" height="60vh" class="">
+                    <q-carousel-slide v-for="slide in slides" :name="slide.id" class="" :img-src="slide.src"
+                        :alt="slide.name">
+                        <div class="custom-caption-mobile">
+                            <h4 class="">{{slide.title}}</h4>
+                        </div>
+                        <div v-if="slide.id != 0" class="custom-caption-mobile">
+                            <q-btn v-if="slide.title != 'Litigation Services'" size="md" class="" rounded color="info"
+                                no-caps to="/services">
+                                Learn
+                                More
+                            </q-btn>
+                            <q-btn v-else size="md" class="" rounded color="info" no-caps to="/litigation">Learn
+                                More
+                            </q-btn>
+                        </div>
+                    </q-carousel-slide>
+                </q-carousel>
             </div>
         </div>
         <div class="row justify-center second-header text-center header-padding mobile-only">
-            <div class="col-xs-10 col-sm-9 col-md-8 text-justify white-background text-padding shadow-12 mobile-margin"
+            <div class="col-xs-10 col-sm-9 col-md-8 text-justify white-background text-padding shadow-12 mobile-margin border-background"
                 v-anime="{  opacity: { value: ['0', '1'], duration: 8000 }}">
                 <div class="text-body2 paragraph-ind">Harvard Print & Copy Center is a full service printing and copying
                     copmany, with
@@ -86,7 +116,7 @@
             </div>
         </div>
         <!-- END MOBILE  -->
-        <div class="row justify-center header text-center">
+        <div class="row justify-center header text-center ">
             <q-card @click.native="push(card.link)" :id="card.link" v-for="card in cardServices" :class="card.class"
                 v-anime="{ translateY: {value: ['0px', '-150px'], duration: 4000, }}">
                 <q-card-section>
@@ -99,20 +129,17 @@
                 </q-card-section>
             </q-card>
         </div>
-        <!-- <div class="row justify-center second-header text-center">
-            <div class="col-xs-10 col-md-6">
-                <iframe
-                    src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FHarvardCopy%2F&tabs=timeline&width=500&height=500&small_header=true&adapt_container_width=true&hide_cover=true&show_facepile=true&appId"
-                    width="500" height="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0"
-                    allowTransparency="true" allow="encrypted-media"></iframe>
-            </div>
-        </div> -->
     </q-page>
 </template>
 
 <script>
     export default {
         name: 'Home',
+        data() {
+            return {
+                slideModel: 0,
+            }
+        },
         computed: {
             cardServices() {
                 return this.$store.state.items.cardServices;
@@ -120,6 +147,9 @@
             email() {
                 return this.$store.state.state.email
             },
+            slides() {
+                return this.$store.state.items.slides;
+            }
         },
         methods: {
             push(link) {
