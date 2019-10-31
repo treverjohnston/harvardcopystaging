@@ -16,7 +16,7 @@
     <div class="row justify-between desktop-only second-header">
       <q-list separator class="col-md-4">
         <q-item clickable v-for="service in services">
-          <q-item-section v-if="selected == service.id" @click="selected = service.id">
+          <q-item-section v-if="selected == service.id" @click="selected = service.id" class="">
             <p :class="service.highlightClass" v-anime="{ translateX: { value: ['-30px', '0px'], duration: 4000, }}">
               {{service.name}}
             </p>
@@ -32,11 +32,11 @@
       <div class="col-sm-6 col-md-4 col-lg-3 space-right">
         <q-card dark bordered :class="services[selected].class">
           <q-card-section>
-            <div class="text-h4 text-bold">{{services[selected].name}}</div>
+            <div class="text-h4 text-bold text-blue">{{services[selected].name}}</div>
           </q-card-section>
 
           <q-separator dark inset />
-          <q-card-section v-for="sub in services[selected].subservices" class="sub">
+          <q-card-section v-for="sub in services[selected].subservices" class="sub text-blue">
             <q-icon name="fa fa-check-square" class="self-center" />
             <span class="">
               {{sub}}
@@ -128,13 +128,14 @@
   }
 
   .selected {
-    color: white;
-    background-color: rgba(211, 211, 211, 0.671);
+    background-color: rgba(255, 255, 255, 0.87);
+
     padding: 1rem;
     border-radius: 15px;
   }
 
   .card {
     margin: 1rem;
+    background-color: rgba(255, 255, 255, 0.87);
   }
 </style>

@@ -9,12 +9,12 @@
         <h4 class="mobile-only text-bold">Litigation Services</h4>
       </div>
     </div>
-    <div class="row justify-center second-header header-padding">
-      <div class="col-xs-10 col-sm-8 col-md-8 white-background shadow-12 text-padding border-background"
+    <div class="row justify-around second-header header-padding">
+      <div class="col-xs-10 col-sm-6 col-md-6 white-background shadow-12 text-padding border-background"
         v-anime="{opacity: { value: ['0', '1'], duration: 500,delay:300 }, translateY: { value: ['100px', '-125px'], duration: 1000},  easing: 'linear' }">
-        <h6 class="text-weight-regular desktop-only">Harvard Litigation Services offers litigation support services to
-          the SF bay area community for over {{years}} years. <b class="heading">We are now servicing the Boise, Idaho
-            area as well.</b> We understand your firm’s needs and have the expertise to get the
+        <h6 class="text-weight-regular desktop-only">Harvard Litigation Services has over {{years}} years of experience
+          offering litigation support services. <b class="heading">We are currently only servicing the Boise Treasure
+            Valley area.</b> We understand your firm’s needs and have the expertise to get the
           job done
           right and on time.</h6>
         <h6 class="text-bold desktop-only">We are your one stop shop for trial prep and litigation copying needs
@@ -23,9 +23,9 @@
           services in-house:
         </h6>
 
-        <p class="text-weight-regular mobile-only">Harvard Litigation Services offers litigation support services to
-          the SF bay area community for over {{years}} years. <b class="heading">We are now servicing the Boise, Idaho
-            area as well.</b> We understand your firm’s needs and have the expertise to get the
+        <p class="text-weight-regular mobile-only">Harvard Litigation Services has over {{years}} years of experience
+          offering litigation support services. <b class="heading">We are currently only servicing the Boise Treasure
+            Valley area.</b> We understand your firm’s needs and have the expertise to get the
           job done
           right and on time.</p>
         <p class="text-bold mobile-only">We are your one stop shop for trial prep and litigation copying needs providing
@@ -94,6 +94,10 @@
             <q-icon name="check" size="xs" class="" />Large Format Copying (Blueprints, etc.)</li>
           <li class="text-weight-bold">and More!</li>
         </ul>
+      </div>
+      <div class="col-xs-10 col-sm-5 col-md-5 self-center"
+        v-anime="{opacity: { value: ['0', '1'], duration: 500,delay:300 }, translateY: { value: ['100px', '-125px'], duration: 1000},  easing: 'linear' }">
+        <q-img src="../statics/various/judge.jpg" class="shadow-12 border-background" alt="litigation stock photo" />
       </div>
     </div>
     <div class="row justify-center header">

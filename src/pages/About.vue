@@ -15,7 +15,7 @@
             </div>
         </div> -->
         <div class="row justify-between second-header">
-            <div class="col-sm-10 col-md-6 text-justify text-padding shadow-12 white-background border-background"
+            <div class="col-sm-10 col-md-8 text-justify text-padding shadow-12 white-background border-background"
                 v-anime="{opacity: { value: ['0', '1'], duration: 500,delay:300 }, translateY: { value: ['100px', '-125px'], duration: 1000},  easing: 'linear' }">
                 <h6 class="text-weight-regular desktop-only">
                     Harvard Print and Copy Center is a family owned business which provides Printing, Graphics
@@ -59,8 +59,10 @@
                     as Chevron, Bank of America, Harvard University, Pacific Bell, local schools and small
                     businesses.
                 </div>
-                <img src="../statics/office.png" alt="Harvard Print and Copy office" width="300"
-                    class="mobile-only"></img>
+                <div class="text-center">
+                    <img src="../statics/various/businesswoman.jpg" alt="stock photo" width="200"
+                        class="mobile-only text-center"></img>
+                </div>
                 <div class="text-body2 text-weight-regular mobile-only">
                     After 20 years in Danville, we moved our office to 2010 Crow Canyon Place, Suite 100 in
                     San Ramon, CA. Our new
@@ -88,8 +90,10 @@
                     Request a Quote
                 </q-btn>
             </div>
-            <div class="col-md-5 desktop-only">
-                <q-img src="../statics/various/post_small.jpeg" class="shadow-12" alt="stack of mail" />
+            <div class="col-md-3 desktop-only self-center"
+                v-anime="{opacity: { value: ['0', '1'], duration: 500,delay:300 }, translateY: { value: ['100px', '-125px'], duration: 1000},  easing: 'linear' }">
+                <q-img src="../statics/various/businesswoman.jpg" class="shadow-12 border-background"
+                    alt="stock photo" />
             </div>
         </div>
     </q-page>

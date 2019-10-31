@@ -28,8 +28,7 @@
                 v-anime="{opacity: { value: ['0', '1'], duration: 500,delay:300 }, translateY: { value: ['100px', '-75px'], duration: 1000},  easing: 'linear', delay:100 }">
                 <div class="text-h6 text-weight-regular paragraph-ind">Harvard Print & Copy Center is a full service
                     printing and copying
-                    copmany, with
-                    more than 20 years
+                    company, with more than {{years}} years
                     hands-on experience.</div>
                 <div class="text-h6 text-weight-regular paragraph-ind">
                     We design and print our customers documents, invitations, and any project at hand. We boast
@@ -84,8 +83,8 @@
             <div class="col-xs-10 col-sm-9 col-md-8 text-justify white-background text-padding shadow-12 mobile-margin border-background"
                 v-anime="{  opacity: { value: ['0', '1'], duration: 8000 }}">
                 <div class="text-body2 paragraph-ind">Harvard Print & Copy Center is a full service printing and copying
-                    copmany, with
-                    more than 20 years
+                    company, with
+                    more than {{years}} years
                     hands-on experience.</div>
                 <div class="text-body2 paragraph-ind">
                     We design and print our customers documents, invitations, and any project at hand. We boast
@@ -149,6 +148,10 @@
             },
             slides() {
                 return this.$store.state.items.slides;
+            },
+            years() {
+                var y = new Date;
+                return parseInt(y.getFullYear()) - 1995;
             }
         },
         methods: {

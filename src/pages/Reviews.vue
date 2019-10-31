@@ -38,14 +38,14 @@
               </q-btn>
             </q-card-section>
           </q-card>
-          <div class="col-md-5 self-center">
+          <!-- <div class="col-md-5 self-center">
             <q-btn no-caps color="white" rounded class="yelp-btn shadow-12"
               @click="openURL('https://www.yelp.com/biz/harvard-print-and-copy-center-san-ramon')">
               <q-icon size="xl" color="negative" name="fab fa-yelp" />
               <span class="text-black text-h6">
                 All Yelp Reviews</span>
             </q-btn>
-          </div>
+          </div> -->
         </div>
       </div>
     </div>

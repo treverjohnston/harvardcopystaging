@@ -130,7 +130,7 @@ export default {
       id: 0,
       value: 'copy',
       class: 'card gray-bg',
-      highlightClass: 'text-bold service selected shadow-16',
+      highlightClass: 'text-bold service selected shadow-16 text-blue',
       classMobile: 'bg-info col-xs-10  expansion-space shadow-16'
     },
     {
@@ -145,7 +145,7 @@ export default {
       id: 1,
       value: 'direct',
       class: 'gray-bg card',
-      highlightClass: 'text-bold service gray-bg selected shadow-16',
+      highlightClass: 'text-bold service gray-bg selected shadow-16 text-blue',
       classMobile: 'bg-secondary col-xs-10  expansion-space shadow-16'
     },
     {
@@ -167,7 +167,7 @@ export default {
       id: 2,
       value: 'office',
       class: 'gray-bg card',
-      highlightClass: 'text-bold service gray-bg selected shadow-16',
+      highlightClass: 'text-bold service gray-bg selected shadow-16 text-blue',
       classMobile: 'bg-negative col-xs-10  expansion-space shadow-16'
     },
     {
@@ -185,7 +185,7 @@ export default {
       id: 3,
       value: 'announcements',
       class: 'gray-bg card',
-      highlightClass: 'text-bold service gray-bg selected shadow-16',
+      highlightClass: 'text-bold service gray-bg selected shadow-16 text-blue',
       classMobile: 'bg-accent col-xs-10  expansion-space shadow-16'
     },
     {
@@ -201,7 +201,7 @@ export default {
       id: 4,
       value: 'graphics',
       class: 'gray-bg card',
-      highlightClass: 'text-bold service gray-bg selected shadow-16',
+      highlightClass: 'text-bold service gray-bg selected shadow-16 text-blue',
       classMobile: 'bg-positive col-xs-10  expansion-space shadow-16'
     },
     {
@@ -223,8 +223,8 @@ export default {
       ],
       id: 5,
       value: 'bindery',
-      class: 'gray-bg card',
-      highlightClass: 'text-bold service gray-bg selected shadow-16',
+      class: 'card',
+      highlightClass: 'text-bold service gray-bg selected shadow-16 text-blue',
       classMobile: 'bg-warning col-xs-10  expansion-space shadow-16'
     },
   ],

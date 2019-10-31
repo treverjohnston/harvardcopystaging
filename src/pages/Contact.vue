@@ -33,7 +33,8 @@
               :rules="[val => !!val || 'Field is required']" />
             <q-input v-model="message" color="teal" type="textarea" name="message" label="Message" :max-height="100"
               class="input" :min-rows="5" ref="input" :rules="[val => !!val || 'Field is required']" />
-            <q-btn class="q-mr-sm" @click="openURL('https://www.dropbox.com/request/qNhSFNyEeTcRX07sZByt')">Upload
+            <q-btn no-caps class="q-mr-sm" @click="openURL('https://www.dropbox.com/request/8H6gLgERUPo0ERLZmPsl')">
+              Upload
               file(s) to Dropbox
             </q-btn>
             <q-btn outline color="teal" @click="sendEmail" rounded class="send-btn self-center">Send Message</q-btn>
@@ -87,7 +88,8 @@
                   :rules="[val => !!val || 'Field is required']" />
                 <q-input v-model="message" color="teal" type="textarea" name="message" label="Message" :max-height="100"
                   :min-rows="5" ref="input" :rules="[val => !!val || 'Field is required']" />
-                <q-btn @click="openURL('https://www.dropbox.com/request/qNhSFNyEeTcRX07sZByt')">Upload file(s) to
+                <q-btn no-caps @click="openURL('https://www.dropbox.com/request/8H6gLgERUPo0ERLZmPsl')">Upload file(s)
+                  to
                   Dropbox
                 </q-btn>
               </div>

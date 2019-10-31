@@ -5,7 +5,7 @@ module.exports = function (ctx) {
   return {
     htmlVariables: {
       title: 'Harvard Print & Copy Center',
-      description: 'Harvard Print & Copy Center is a full service printing and copying place, with more than 20 years hands-on experience. We design and print our customers documents, invitations, and any project at hand.',
+      description: 'Harvard Print & Copy Center is a full service printing and copying place, with more than 24 years hands-on experience. We design and print our customers documents, invitations, and any project at hand. We have offices in San Ramon, California, and Boise, Idaho',
       imgUrl: 'statics/icons/harvardCopyOverUnder.jpeg',
       webUrl: 'https://www.harvardcopy.com'
     },
