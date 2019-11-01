@@ -43,10 +43,10 @@
             </span>
           </q-card-section>
         </q-card>
-        <q-btn to="/contact" color="white" size="lg" outline rounded no-caps
+        <!-- <q-btn to="/contact" color="white" size="lg" outline rounded no-caps
           class="quote-btn shadow-24 float-right gray-bg">
           Request a Quote
-        </q-btn>
+        </q-btn> -->
       </div>
 
       <div class="col-sm-4 col-md-3 col-lg-4">
@@ -71,10 +71,10 @@
       <div class="col-xs-10 self-center">
         <q-img src="../statics/various/line.jpeg" class="shadow-12 service-img" alt="color chart picture" />
       </div>
-      <q-btn to="/contact" color="white" size="lg" outline rounded no-caps class="quote-btn shadow-24 col-xs-8">Request
+      <!-- <q-btn to="/contact" color="white" size="lg" outline rounded no-caps class="quote-btn shadow-24 col-xs-8">Request
         a
         Quote
-      </q-btn>
+      </q-btn> -->
     </div>
     <!-- END MOBILE -->
   </q-page>

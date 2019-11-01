@@ -70,7 +70,8 @@ module.exports = function (ctx) {
         'QCarousel',
         'QCarouselControl',
         'QCarouselSlide',
-        'QRating'
+        'QRating',
+        'QPageSticky'
       ],
 
       directives: [
@@ -89,7 +90,7 @@ module.exports = function (ctx) {
 
     build: {
       scopeHoisting: true,
-      distDir: 'docs',
+      distDir: 'docs/docs',
       // vueRouterMode: 'history',
       // vueCompiler: true,
       // gzip: true,

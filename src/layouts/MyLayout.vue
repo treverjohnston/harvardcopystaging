@@ -147,6 +147,16 @@
       </q-toolbar>
 
     </q-footer>
+    <q-page-sticky v-if="!contactPage" position="bottom-right" :offset="[18, 18]" class="desktop-only">
+      <q-btn to="/contact" color="info" size="lg" outline rounded no-caps class="bg-white shadow-12">
+        Request a Quote
+      </q-btn>
+    </q-page-sticky>
+    <q-page-sticky v-if="!contactPage" position="bottom-right" :offset="[35, 35]" class="mobile-only">
+      <q-btn to="/contact" color="info" size="md" outline rounded no-caps class="bg-white shadow-12">
+        Request a Quote
+      </q-btn>
+    </q-page-sticky>
 
   </q-layout>
 </template>
@@ -166,6 +176,9 @@
       }
     },
     computed: {
+      contactPage() {
+        return this.$route.path == "/contact";
+      },
       tabs() {
         return this.$store.state.tabs.tabs
       },

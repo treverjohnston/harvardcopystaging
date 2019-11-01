@@ -81,14 +81,14 @@
                     seriously and our quality is
                     there to appreciate. The customer is always right.
                 </div>
-                <q-btn to="/contact" color="info" size="lg" outline rounded no-caps
+                <!-- <q-btn to="/contact" color="info" size="lg" outline rounded no-caps
                     class="quote-btn shadow-12 float-right desktop-only">
                     Request a Quote
                 </q-btn>
                 <q-btn to="/contact" color="info" size="md" outline rounded no-caps
                     class="quote-btn shadow-12 float-right mobile-only">
                     Request a Quote
-                </q-btn>
+                </q-btn> -->
             </div>
             <div class="col-md-3 desktop-only self-center"
                 v-anime="{opacity: { value: ['0', '1'], duration: 500,delay:300 }, translateY: { value: ['100px', '-125px'], duration: 1000},  easing: 'linear' }">
