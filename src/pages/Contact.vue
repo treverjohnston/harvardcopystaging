@@ -24,8 +24,8 @@
           </div>
           <div
             class="col-xs-8 self-center text-black white-background text-padding shadow-12 grow-small border-background">
-            <q-input v-model="name" color="teal" label="Name" name="name" type="text" class="input" ref="input"
-              :rules="[val => !!val || 'Field is required']" />
+            <q-input v-model="name" autofocus color="teal" label="Name" name="name" type="text" class="input"
+              ref="input" :rules="[val => !!val || 'Field is required']" />
             <q-input v-model="email" color="teal" label="Email" name="email" type="email" class="input" ref="input"
               :rules="[val => !!val || 'Field is required']" />
             <q-input v-model="phone" color="teal" label="Phone" name="phone" type="tel" class="input" />
@@ -79,7 +79,7 @@
             v-anime="{ opacity: { value: ['0', '1'], duration: 8000 } }">
             <div class="row">
               <div class="col-xs-12">
-                <q-input v-model="name" color="teal" label="Name" name="name" ref="input"
+                <q-input v-model="name" autofocus color="teal" label="Name" name="name" ref="input"
                   :rules="[val => !!val || 'Field is required']" />
                 <q-input v-model="email" color="teal" label="Email" name="email" ref="input"
                   :rules="[val => !!val || 'Field is required']" />
