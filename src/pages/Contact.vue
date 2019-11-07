@@ -37,7 +37,7 @@
               Upload
               file(s) to Dropbox
             </q-btn>
-            <q-btn outline color="teal" @click="sendEmail" rounded class="send-btn self-center">Send Message</q-btn>
+            <q-btn outline color="teal" @click="sendEmail" rounded class="send-btn self-center">Send</q-btn>
             <a href="tel:2089997994" class="phoneNumber self-center">
               <q-btn outline color="teal" rounded class="send-btn float-right">
                 <q-icon name="fa fa-phone" class="q-mr-sm" />
@@ -94,7 +94,7 @@
                 </q-btn>
               </div>
               <div class="col-xs-12">
-                <q-btn outline color="teal" rounded class="send-btn">Send Message</q-btn>
+                <q-btn outline color="teal" rounded class="send-btn">Send</q-btn>
               </div>
               <div class="col-xs-12">
                 <a href="tel:2089997994" class="phoneNumber">
