@@ -13,8 +13,9 @@
       <div class="col-xs-10 col-sm-6 col-md-6 white-background shadow-12 text-padding border-background"
         v-anime="{opacity: { value: ['0', '1'], duration: 500,delay:300 }, translateY: { value: ['100px', '-125px'], duration: 1000},  easing: 'linear' }">
         <h6 class="text-weight-regular desktop-only">Harvard Litigation Services has over {{years}} years of experience
-          offering litigation support services. <b class="heading">We are currently only servicing the Boise Treasure
-            Valley area.</b> We understand your firm’s needs and have the expertise to get the
+          offering litigation support services. <b class="heading text-red">Our Litigation Services are currently
+            exclusively offered to the Boise Treasure Valley area.</b> We understand your firm’s needs and have the
+          expertise to get the
           job done
           right and on time.</h6>
         <h6 class="text-bold desktop-only">We are your one stop shop for trial prep and litigation copying needs
@@ -24,8 +25,9 @@
         </h6>
 
         <p class="text-weight-regular mobile-only">Harvard Litigation Services has over {{years}} years of experience
-          offering litigation support services. <b class="heading">We are currently only servicing the Boise Treasure
-            Valley area.</b> We understand your firm’s needs and have the expertise to get the
+          offering litigation support services. <b class="heading text-red">Our Litigation Services are currently
+            exclusively offered to the Boise Treasure Valley area.</b> We understand your firm’s needs and have the
+          expertise to get the
           job done
           right and on time.</p>
         <p class="text-bold mobile-only">We are your one stop shop for trial prep and litigation copying needs providing
