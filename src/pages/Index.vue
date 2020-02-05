@@ -2,13 +2,12 @@
     <q-page>
         <!-- DESKTOP -->
         <div class="row justify-center header text-center home-header desktop-only">
-            <div class="col-xs-12">
+            <div class="col-xs-12" v-scroll-fire="fadeInImage">
                 <q-carousel infinite animated arrows :autoplay="6000" v-model="slideModel" height="60vh">
                     <q-carousel-slide v-for="slide in slides" :name="slide.id" class="" :img-src="slide.src"
                         :alt="slide.name">
                         <div class="custom-caption">
                             <span class="text-h1">{{slide.title}}</span>
-                            <!-- <h1 class=""> Harvard Print and Copy Center</h1> -->
                         </div>
                         <div v-if="slide.id != 0" class="custom-caption">
                             <q-btn v-if="slide.title != 'Litigation Services'" size="xl" class="" rounded color="info"
@@ -23,8 +22,48 @@
                 </q-carousel>
             </div>
         </div>
-        <div class="row justify-center second-header text-center header-padding desktop-only q-gutter-md">
-            <div class="col-xs-10 col-sm-9 col-md-8 text-justify white-background text-padding shadow-12 self-center home-border"
+          <!-- MOBILE -->
+        <div class="row justify-center text-center mobile-only">
+            <div class="col-xs-12" v-scroll-fire="fadeInImage">
+                <q-carousel infinite arrows animated :autoplay="6000" v-model="slideModel" height="60vh" class="">
+                    <q-carousel-slide v-for="slide in slides" :name="slide.id" class="" :img-src="slide.src"
+                        :alt="slide.name">
+                        <div class="custom-caption-mobile">
+                            <h4 class="">{{slide.title}}</h4>
+                        </div>
+                        <div v-if="slide.id != 0" class="custom-caption-mobile">
+                            <q-btn v-if="slide.title != 'Litigation Services'" size="md" class="" rounded color="info"
+                                no-caps to="/services">
+                                Learn
+                                More
+                            </q-btn>
+                            <q-btn v-else size="md" class="" rounded color="info" no-caps to="/litigation">Learn
+                                More
+                            </q-btn>
+                        </div>
+                    </q-carousel-slide>
+                </q-carousel>
+            </div>
+        </div>
+        <!-- END MOBILE -->
+        <!-- SQUARES (desktop/mobile) -->
+        <div class="row justify-center second-header text-center header-padding ">
+            <q-card @click.native="push(card.link)" :id="card.link" v-for="card in cardServices" :class="card.class"
+                v-anime="{ translateY: {value: ['100px', '-50px'], duration: 4000, }}">
+                <q-card-section>
+                    <div class="text-h6">{{card.name}}</div>
+                </q-card-section>
+
+                <q-separator dark />
+                <q-card-section>
+                    <q-icon color="white" :name="card.icon" class="icon-ind grow" />
+                </q-card-section>
+            </q-card>
+        </div>
+        <!-- END SQUARES -->
+        <!-- DESKTOP -->
+        <div class="row justify-center header text-center desktop-only q-gutter-md">
+            <div class="col-xs-10 col-sm-9 col-md-8 text-justify white-background text-padding shadow-12 self-center home-border not-loaded"
                 v-anime="{opacity: { value: ['0', '1'], duration: 500,delay:300 }, translateY: { value: ['100px', '-75px'], duration: 1000},  easing: 'linear', delay:100 }">
                 <div class="text-h6 text-weight-regular paragraph-ind">Harvard Print & Copy Center is a full service
                     printing and copying
@@ -48,37 +87,14 @@
                     fast, high quality printing,
                     call Harvard Print &
                     Copy Center!</div>
-                <h6 class="text-center text-bold" v-scroll-fire="fadeInImage">We are excited to announce as of 2019, we
+                <h6 class="text-center text-bold">We are excited to announce as of 2019, we
                     now have an office in Boise,
                     Idaho!
                     For fast, friendly service in the the Treasure Valley, give Harvard Print & Copy Center a call!
                 </h6>
             </div>
         </div>
-        <!--  -->
-        <!-- MOBILE -->
-        <div class="row justify-center text-center mobile-only">
-            <div class="col-xs-12">
-                <q-carousel infinite arrows animated :autoplay="6000" v-model="slideModel" height="60vh" class="">
-                    <q-carousel-slide v-for="slide in slides" :name="slide.id" class="" :img-src="slide.src"
-                        :alt="slide.name">
-                        <div class="custom-caption-mobile">
-                            <h4 class="">{{slide.title}}</h4>
-                        </div>
-                        <div v-if="slide.id != 0" class="custom-caption-mobile">
-                            <q-btn v-if="slide.title != 'Litigation Services'" size="md" class="" rounded color="info"
-                                no-caps to="/services">
-                                Learn
-                                More
-                            </q-btn>
-                            <q-btn v-else size="md" class="" rounded color="info" no-caps to="/litigation">Learn
-                                More
-                            </q-btn>
-                        </div>
-                    </q-carousel-slide>
-                </q-carousel>
-            </div>
-        </div>
+        <!-- MOBILE  -->      
         <div class="row justify-center second-header text-center header-padding mobile-only">
             <div class="col-xs-10 col-sm-9 col-md-8 text-justify white-background text-padding shadow-12 mobile-margin border-background"
                 v-anime="{  opacity: { value: ['0', '1'], duration: 8000 }}">
@@ -115,19 +131,7 @@
             </div>
         </div>
         <!-- END MOBILE  -->
-        <div class="row justify-center header text-center ">
-            <q-card @click.native="push(card.link)" :id="card.link" v-for="card in cardServices" :class="card.class"
-                v-anime="{ translateY: {value: ['0px', '-150px'], duration: 4000, }}">
-                <q-card-section>
-                    <div class="text-h6">{{card.name}}</div>
-                </q-card-section>
 
-                <q-separator dark />
-                <q-card-section>
-                    <q-icon color="white" :name="card.icon" class="icon-ind grow" />
-                </q-card-section>
-            </q-card>
-        </div>
     </q-page>
 </template>
 
