@@ -3,7 +3,7 @@ import { Notify } from 'quasar'
 
 
 var production = !window.location.host.includes('localhost');
-var baseUrl = production ? '//harvardcopy.ebenezerwebsites.com/' : '//localhost:3000/';
+var baseUrl = production ? '//harvardcopy.herokuapp.com' : '//localhost:3000/';
 
 let auth_api = axios.create({
     baseURL: baseUrl,

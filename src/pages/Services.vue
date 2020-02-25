@@ -2,14 +2,11 @@
   <q-page>
     <div class="row justify-center header text-center">
       <div class="col-sm-10 col-md-12 heading">
-        <h1 class="desktop-only text-regular">Harvard Print and Copy Center</h1>
-        <h5 text-regular class="mobile-only">Harvard Print and Copy Center</h5>
-        <hr class="heading-hr">
+        <h1 class="hidden text-regular">Harvard Print and Copy Center</h1>
+        <!-- <h5 text-regular class="mobile-only">Harvard Print and Copy Center</h5> -->
         <h2 class="desktop-only text-bold">Print/Copy Services</h2>
-        <!-- <q-btn to="/contact" color="info" size="xl" outline rounded no-caps class="quote-btn shadow-24 desktop-only">
-          Request a Quote
-        </q-btn> -->
         <h4 class="mobile-only text-bold">Print/Copy Services</h4>
+        <hr class="heading-hr">
       </div>
     </div>
     <!-- DESKTOP -->
