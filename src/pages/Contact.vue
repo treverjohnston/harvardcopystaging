@@ -24,7 +24,7 @@
           </div>
           <div
             class="col-xs-8 self-center text-black white-background text-padding shadow-12 grow-small border-background">
-            <q-input v-model="name" autofocus color="teal" label="Name" name="name" type="text" class="input"
+            <!-- <q-input v-model="name" autofocus color="teal" label="Name" name="name" type="text" class="input"
               ref="input" :rules="[val => !!val || 'Field is required']" />
             <q-input v-model="email" color="teal" label="Email" name="email" type="email" class="input" ref="input"
               :rules="[val => !!val || 'Field is required']" />
@@ -32,12 +32,18 @@
             <q-input v-model="subject" color="teal" label="Subject" name="subject" type="text" class="input" ref="input"
               :rules="[val => !!val || 'Field is required']" />
             <q-input v-model="message" color="teal" type="textarea" name="message" label="Message" :max-height="100"
-              class="input" :min-rows="5" ref="input" :rules="[val => !!val || 'Field is required']" />
+              class="input" :min-rows="5" ref="input" :rules="[val => !!val || 'Field is required']" /> -->
+            <h6 class="text-weight-bold desktop-only">
+              Please send us your requests for quote or estimate to <a
+                href="mailto:wish@harvardcopy.com">Wish@HarvardCopy.com</a>
+              or simply email us at <a href="mailto:harvardcopy@gmail.com">Harvardcopy@gmail.com</a>
+            </h6>
+
             <q-btn no-caps class="q-mr-sm" @click="openURL('https://www.dropbox.com/request/8H6gLgERUPo0ERLZmPsl')">
               Upload
               file(s) to Dropbox
             </q-btn>
-            <q-btn outline color="teal" @click="sendEmail" rounded class="send-btn self-center">Send</q-btn>
+            <!-- <q-btn outline color="teal" @click="sendEmail" rounded class="send-btn self-center">Send</q-btn> -->
             <a href="tel:2089997994" class="phoneNumber self-center">
               <q-btn outline color="teal" rounded class="send-btn float-right">
                 <q-icon name="fa fa-phone" class="q-mr-sm" />
@@ -79,7 +85,7 @@
             v-anime="{ opacity: { value: ['0', '1'], duration: 8000 } }">
             <div class="row">
               <div class="col-xs-12">
-                <q-input v-model="name" autofocus color="teal" label="Name" name="name" ref="input"
+                <!-- <q-input v-model="name" autofocus color="teal" label="Name" name="name" ref="input"
                   :rules="[val => !!val || 'Field is required']" />
                 <q-input v-model="email" color="teal" label="Email" name="email" ref="input"
                   :rules="[val => !!val || 'Field is required']" />
@@ -87,15 +93,22 @@
                 <q-input v-model="subject" color="teal" label="Subject" name="subject" ref="input"
                   :rules="[val => !!val || 'Field is required']" />
                 <q-input v-model="message" color="teal" type="textarea" name="message" label="Message" :max-height="100"
-                  :min-rows="5" ref="input" :rules="[val => !!val || 'Field is required']" />
+                  :min-rows="5" ref="input" :rules="[val => !!val || 'Field is required']" /> -->
+                <div class="text-body2 text-weight-regular mobile-only q-mb-lg">
+                  Please send us your requests for quote or estimate to <a
+                    href="mailto:wish@harvardcopy.com">Wish@HarvardCopy.com</a>
+                  or
+                  simply email us at <a href="mailto:harvardcopy@gmail.com">Harvardcopy@gmail.com</a>
+
+                </div>
                 <q-btn no-caps @click="openURL('https://www.dropbox.com/request/8H6gLgERUPo0ERLZmPsl')">Upload file(s)
                   to
                   Dropbox
                 </q-btn>
               </div>
-              <div class="col-xs-12">
+              <!-- <div class="col-xs-12">
                 <q-btn outline color="teal" rounded class="send-btn">Send</q-btn>
-              </div>
+              </div> -->
               <div class="col-xs-12">
                 <a href="tel:2089997994" class="phoneNumber">
                   <q-btn outline color="teal" rounded no-caps class="send-btn">
