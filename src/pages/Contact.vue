@@ -35,8 +35,9 @@
               class="input" :min-rows="5" ref="input" :rules="[val => !!val || 'Field is required']" /> -->
             <h6 class="text-weight-bold desktop-only">
               Please send us your requests for quote or estimate to <a
-                href="mailto:wish@harvardcopy.com">Wish@HarvardCopy.com</a>
-              or simply email us at <a href="mailto:harvardcopy@gmail.com">Harvardcopy@gmail.com</a>
+                href="mailto:wish@harvardcopy.com">Wish@HarvardCopy.com</a></h6>
+            <h6 class="text-weight-bold desktop-only">
+              Or simply email us at <a href="mailto:harvardcopy@gmail.com">Harvardcopy@gmail.com</a>
             </h6>
 
             <q-btn no-caps class="q-mr-sm" @click="openURL('https://www.dropbox.com/request/8H6gLgERUPo0ERLZmPsl')">
@@ -94,11 +95,12 @@
                   :rules="[val => !!val || 'Field is required']" />
                 <q-input v-model="message" color="teal" type="textarea" name="message" label="Message" :max-height="100"
                   :min-rows="5" ref="input" :rules="[val => !!val || 'Field is required']" /> -->
-                <div class="text-body2 text-weight-regular mobile-only q-mb-lg">
+                <div class="text-body2 text-weight-regular mobile-only">
                   Please send us your requests for quote or estimate to <a
                     href="mailto:wish@harvardcopy.com">Wish@HarvardCopy.com</a>
-                  or
-                  simply email us at <a href="mailto:harvardcopy@gmail.com">Harvardcopy@gmail.com</a>
+                    </div>
+                <div class="text-body2 text-weight-regular mobile-only q-mb-lg">
+                  Or simply email us at <a href="mailto:harvardcopy@gmail.com">Harvardcopy@gmail.com</a>
 
                 </div>
                 <q-btn no-caps @click="openURL('https://www.dropbox.com/request/8H6gLgERUPo0ERLZmPsl')">Upload file(s)
